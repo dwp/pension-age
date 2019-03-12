@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+  Passed SP date
 {% endblock %}
 {% set serviceName %}
   Check your State Pension age
@@ -16,21 +16,33 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-     
+     <!--This page is if a user has passed their SP date-->
+
       <h1 class="govuk-heading-xl">
-   Your State Pension age
+   You can get your State Pension now
       </h1>
-      <p>The earliest you can get your State Pension is <strong>8 November 2032</strong>, when you'll be <strong>66</strong>.</p>
-      <p><a href="https://www.gov.uk/check-state-pension">Check your State Pension forecast to find out how much you could get</a>.</p>
-      <p>You won’t get your State Pension automatically - you’ll have to claim it. You should
-        receive a letter up to 2 months before you reach State Pension age telling you how to do
-        this.</p>
-        <h2 class="govuk-heading-l">Other financial support you get at State Pension age</h2>
-        <ul class="govuk-list govuk-list--bullet">
-          <li><a href="https://www.gov.uk/winter-fuel-payment">Winter Fuel Payments</a> - you get these automatically when you claim your State Pension to help with your heating bill</li>
-          <li><a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Bus pass</a> - apply for free travel</li>
-          <li><a href="https://www.gov.uk/pension-credit">Pension Credit</a> - if you're on a low income</li>
-        </ul>
+      <p>You reached State Pension age on <strong>6 November 2018</strong>, when you turned <strong>66</strong>.</p>
+
+      <h2 class="govuk-heading-l">What you can do now</h2>
+      
+      <p>Because you've reached State Pension age, you can choose to either:</p>
+      <ul class="govuk-list govuk-list--bullet">
+          <li>make a claim to <a href="https://www.gov.uk/get-state-pension">get your State Pension now</a></li>
+          <li><a href="https://www.gov.uk/deferring-state-pension">delay getting your State Pension</a> - you may get more State Pension
+          when you come to claim it</li>
+      
+      </ul>
+ 
+        
+      
+
+      <h2 class="govuk-heading-l">Other age-related support</h2>
+      <p>You may also now be eligible for:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">Winter Fuel Payments</a> - you'll get these automatically if you're getting State Pension</li>
+        <li><a href="">a bus pass</a> - you can apply to your local council for free travel</li>
+        <li><a href="">Pension Credit</a> - if you're on a low income, you may be able to get this</li>
+      </ul>
 
 
    

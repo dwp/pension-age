@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Within 4 months
+{% endblock %}
+{% set serviceName %}
+  Check your State Pension age
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_start">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is within 4 months of their SP date-->
+
+        <h1 class="govuk-heading-xl">
+            When you can get your State Pension
+          </h1>
+          <p>The earliest you can get your State Pension is <b>6 May 2019</b>, when you're <b>66 years and 3 months</b>.</p>
+          
+          <h2 class="govuk-heading-l">What happens next</h2>
+          
+          <p>You'll soon get a letter telling you how to claim your State Pension. When you get
+            this letter you can either:</p> 
+            
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>make a claim to <a href="https://www.gov.uk/get-state-pension">get your State Pension</a></li>
+                  <li><a href="https://www.gov.uk/deferring-state-pension">delay getting your State Pension</a> - you may get more 
+                    State Pension when you come to claim it</li>
+              
+              </ul>
+
+          </p>
+  
+          
+          <p>You can also <a href="/url/of/onward/page">check your State Pension</a> to find 
+            out how much you could get.</p>
+          
+            <h2 class="govuk-heading-l">Other age-related support</h2>
+            <p>When you reach State Pension age, you may also be eligible for:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="">Winter Fuel Payments</a> - you'll get these automatically if you're getting State Pension</li>
+              <li><a href="">a bus pass</a> - you can apply to your local council for free travel</li>
+              <li><a href="">Pension Credit</a> - if you're on a low income, you may be able to get this</li>
+            </ul>
+
+
+   
+
+
+    </div>
+  </div>
+
+{% endblock %}
