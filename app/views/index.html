@@ -10,35 +10,45 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-       My first prototype
-       <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+       Retirement content prototypes
+       
+      </h1>
+      <div class="example2">
+          <div class="grid-row">
+      
+      <h2 class="govuk-heading-m">Check your State Pension age</h2>
+      
+
+      
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Simplified the State Pension age calculator to only ask for the information we need. Help to make users aware of what else they're entitled to at State Pension age.
       </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>-->
+      
+      
+      <div>
+      <a href="/pension_age_start" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">State Pension age calc</a>
+      </div>
+      
+        </div>
     </div>
+    <div class="example2">
+        <div class="grid-row">
+    
+    <h2 class="govuk-heading-m">Contact the Pension Service</h2>
+    
+
+    
+    <p>
+      Split the content into the main tasks users may need to contact us - Claims, Changes etc
+    </p>
+    
+    
+   
+    <a href="/contact_pension_service" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Contact Pension Service</a>
+    
+    
+      </div>
+  </div>
 </div>
 
 {% endblock %}
