@@ -21,7 +21,7 @@ $govuk-global-styles: true;
     overflow: hidden;
     position: relative;
 
-    @media (max-width: 641px)
+    @media (min-width: 641px)
     {
     padding-bottom: 30px;
     padding-left: 30px;
