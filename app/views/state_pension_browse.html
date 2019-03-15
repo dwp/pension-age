@@ -1,0 +1,182 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+       State Pension
+      </h1>
+
+      <div id="subsection" class="subsection-pane pane with-sort">
+        <div class="pane-inner a-to-z">
+   
+    
+     <h2 class="govuk-heading-m">How much you could get and when</h2>  
+        <ul class="a-to-z">
+                <li>
+                        <a href="/pension_age_start">Check your State Pension age</a>
+                      </li>
+                      <li>
+                            <a href="/check_start">Check your State Pension forecast</a>
+                          </li>
+                          <li>
+                                <a href="/deferring-state-pension">Delay (defer) your State Pension</a>
+                              </li>
+                              <li>
+                                    <a href="https://draft-origin.publishing.service.gov.uk/plan-for-retirement?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNTM0NjQzMy02MjYyLTQ5MzgtYjc2MS0zMzYxMzk2NDYyMzYifQ.8p4ldQbJISNjK4MQZp4c3Qoas81cDGwE91egOxHD1rc">Plan your retirement income step-by-step</a>
+                                  </li>
+                        </ul>
+
+                        <h2 class="govuk-heading-m">How to claim it</h2>  
+
+                        <ul class="a-to-z">                          
+                                <li>
+                                        <a href="https://www.gov.uk/get-state-pension">Get your State Pension</a>
+                                      </li>
+                                      <li>
+                                            <a href="https://www.gov.uk/state-pension-if-you-retire-abroad">State Pension if you retire abroad</a>
+                                          </li>
+                                    </ul>
+                                    <h2 class="govuk-heading-m">Report a change of circumstances</h2>  
+
+                                    <ul class="a-to-z">                          
+                                            <li>
+                                                    
+                                                            <a href="/contact_pension_service">Contact the Pension Service</a>
+                                                
+                                                  </li>
+                                                </ul>
+
+                                                <h2 class="govuk-heading-m">Information about the State Pension</h2>  
+
+                                                <ul class="a-to-z">                          
+                                                        <li>
+                                                                <a href="https://www.gov.uk/new-state-pension">The new State Pension</a>
+                                                              </li>
+                                                            </ul>           
+
+                                    <h2 class="govuk-heading-m">Other support at State Pension age</h2>  
+
+                                    <ul class="a-to-z">  
+                                            <li>
+                                                    <a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Bus pass</a>
+                                                  </li>
+                                            <li>
+                                                    <a href="https://www.gov.uk/pension-credit  ">Pension Credit</a>
+                                                  </li>                        
+                                            <li>
+                                                    <a href="https://www.gov.uk/winter-fuel-payment">Winter Fuel Payments</a>
+                                                  </li>
+                                                 
+                                                </ul>          
+
+                                  
+                                                <h2 class="govuk-heading-m">And the rest......</h2>  
+
+                                                <ul class="a-to-z">             
+            <li>
+              <a href="/additional-state-pension">Additional State Pension</a>
+            </li>
+            <li>
+              <a href="/carers-credit">Carer's Credit</a>
+            </li>
+           
+            <li>
+              <a href="/complain-independent-case-examiner">Complain to the Independent Case Examiner</a>
+            </li>
+            <li>
+              <a href="/future-pension-centre">Contact the Future Pension Centre</a>
+            </li>
+           
+            <li>
+              <a href="/contracted-out">Contracted out of the State Pension</a>
+            </li>
+       
+            <li>
+              <a href="/early-retirement-pension">Early retirement, your pension and benefits</a>
+            </li>
+            <li>
+              <a href="/find-pension-centre">Find your pension centre</a>
+            </li>
+           
+            <li>
+              <a href="/home-responsibilities-protection-hrp">Home Responsibilities Protection</a>
+            </li>
+            <li>
+              <a href="/international-pension-centre">International Pension Centre</a>
+            </li>
+            <li>
+              <a href="/kindertransport-state-pension">Kindertransport and the State Pension</a>
+            </li>
+            <li>
+              <a href="/tax-national-insurance-after-state-pension-age">National Insurance and tax after State Pension age</a>
+            </li>
+            <li>
+              <a href="/national-insurance-credits">National Insurance credits</a>
+            </li>
+            <li>
+              <a href="/nominate-someone-to-collect-state-pension">Nominate someone to collect State Pension</a>
+            </li>
+            <li>
+              <a href="/over-80-pension">Over 80 pension</a>
+            </li>
+      
+            <li>
+              <a href="/pension-credit-calculator">Pension Credit calculator</a>
+            </li>
+           
+            <li>
+              <a href="/state-pension">The basic State Pension</a>
+            </li>
+            
+            <li>
+              <a href="/voluntary-national-insurance-contributions">Voluntary National Insurance</a>
+            </li>
+            <li>
+              <a href="/death-spouse-benefits-tax-pension">Your benefits, tax and pension after the death of a spouse</a>
+            </li>
+            <li>
+              <a href="/state-pension-through-partner">Your partner’s National Insurance record and your State Pension</a>
+            </li>
+        </ul>
+    
+    </div>
+    
+      </div>
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+    
+
+    </div>
+  </div>
+{% endblock %}
