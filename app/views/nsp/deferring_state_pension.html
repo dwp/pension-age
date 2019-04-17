@@ -1,0 +1,119 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Delay (defer) claiming your State Pension
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Delay (defer) your State Pension
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+        <ol class="gem-c-contents-list__list">
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link"">
+              <a class="gem-c-contents-list__link" href="#">How it works</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="#">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="#">If you get benefits or tax credits</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                <a class="gem-c-contents-list__link" href="#">If you move abroad</a>
+              </li>
+              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link">Claim a deferred State Pension</a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#">Inheriting a deferred State Pension</a>
+                  </li>
+      </ol>
+  
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">
+        Claim a deferred State Pension</h2>
+     
+    <p> 
+        If you have deferred for a year or less, you can make a claim to <a href="../check_start">get your State Pension online</a>.</p>
+
+        <p>If you have deferred for more than a year, you will need to make a claim over the phone:</p>
+     
+  
+        <div style="border-left: 1px solid #bfc1c3; padding-left: 15px; margin-bottom: 30px; margin-top: 30px;">
+            <p><strong>Make a claim</strong></p>
+                       <p>Telephone: 0800 731 7898<br>
+                      Textphone: 0800 731 7339<br>
+                      <a href="http://ngts.org.uk/"><abbr title="Next Generation Text">NGT</abbr> text relay</a> (if you cannot hear or speak on the phone): 18001 then 0800 731 7898<br><br>
+                      Welsh language: 0800 731 7936<br>
+                      Welsh language textphone: 0800 731 7013 <br>
+                      Welsh language <a href="http://ngts.org.uk/"><abbr title="Next Generation Text">NGT</abbr> text relay</a> (if you cannot hear or speak on the phone): 18001 then 0800 731 7936</p>
+                       </div>  
+  <h2 class="govuk-heading-m">How it’s paid</h2>
+  
+  <p>The new State Pension is usually paid every 4 weeks into an account of your choice. You’re paid in arrears (for the last 4 weeks, not the coming 4 weeks).</p>
+  
+  <p>The day your pension is paid depends on your National Insurance number.</p>
+  
+ 
+  <p>There are different rules <a href="/state-pension-if-you-retire-abroad/how-to-claim">if you live abroad</a>.</p>
+  
+  <h3 class="govuk-heading-s">Your first payment</h3>
+  
+  <p>You should get your first payment within 5 weeks of reaching State Pension age.</p>
+  
+ 
+  
+  
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/nsp_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}

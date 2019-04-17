@@ -1,0 +1,131 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  What you'll get - The new State Pension
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        The new State Pension
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link"">
+              <a class="gem-c-contents-list__link" href="nsp_overview">  Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="nsp_claim">How to claim</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                <a class="gem-c-contents-list__link" href="#overseas">How it's calculated</a>
+              </li>
+              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">You've been in a workplace, personal or stakeholder pension</a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Your National Insurance record and your State Pension</a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Inheriting or increasing State Pension from a spouse or civil partner
+                    </a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Living and working overseas
+                    </a>
+                  </li>
+      </ol>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">What you'll get</h2>
+     
+    <p> 
+        <a href="../check_start">Check your State Pension forecast</a> to find out how much State Pension you could get.</p>
+
+        <p>The full new State Pension is £168.60 per week.</p>
+     
+  
+  <p>The actual amount you get depends on your <a href="/new-state-pension/your-nationalrance-record-and-your-state-pension"-insu>National Insurance record</a>.</p>
+  
+  <p>The only reasons the amount can be higher are if:</p>
+  
+  <ul  class="govuk-list govuk-list--bullet">
+    <li>you have over a certain amount of Additional State Pension</li>
+    <li>you <a href="deferring_state_pension">defer (delay) taking your State Pension</a>
+  </li>
+  </ul>
+  
+  <p>You can still get a State Pension if you have other income like a <a href="/personal-pensions-your-rights/personal-pensions">personal pension</a> or a <a href="/workplace-pensions">workplace pension</a>.</p>
+  
+  <p>You might have to <a href="/tax-national-insurance-after-state-pension-age/tax-on-your-state-pension-and-other-income">pay tax on your State Pension</a>.</p>
+  
+  <h2 class="govuk-heading-m">How it’s paid</h2>
+  
+  <p>The new State Pension is usually paid every 4 weeks into an account of your choice. You’re paid in arrears (for the last 4 weeks, not the coming 4 weeks).</p>
+  
+  <p>The day your pension is paid depends on your National Insurance number.</p>
+  
+ 
+  <p>There are different rules <a href="/state-pension-if-you-retire-abroad/how-to-claim">if you live abroad</a>.</p>
+  
+  <h3 class="govuk-heading-s">Your first payment</h3>
+  
+  <p>You should get your first payment within 5 weeks of reaching State Pension age.</p>
+  
+ 
+  
+  
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/nsp_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}

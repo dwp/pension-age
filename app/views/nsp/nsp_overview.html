@@ -1,0 +1,131 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  The new State Pension
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        The new State Pension
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link"">
+              <a class="gem-c-contents-list__link">  Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link"  href="nsp_what_youll_get">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="nsp_claim">How to claim</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                <a class="gem-c-contents-list__link" href="#overseas">How it's calculated</a>
+              </li>
+              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">You've been in a workplace, personal or stakeholder pension</a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Your National Insurance record and your State Pension</a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Inheriting or increasing State Pension from a spouse or civil partner
+                    </a>
+                  </li>
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="#complain">Living and working overseas
+                    </a>
+                  </li>
+      </ol>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">Eligibility</h2>
+     
+
+    <p>You’ll be able to claim the new State Pension if you’re:</p>
+  
+  <ul class="govuk-list govuk-list--bullet">
+  <li>a man born on or after 6 April 1951</li>
+  <li>a woman born on or after 6 April 1953</li>
+  </ul>
+  
+  <p>The earliest you can get the new State Pension is when you reach <a href="/pension-age-start">State Pension age</a>.</p>
+  
+  <p>If you reached State Pension age before 6 April 2016, you’ll get the State Pension under the <a href="https://gov.uk/state-pension/what-youll-get">old rules</a> instead.</p>
+  
+
+  
+  <h2 class="govuk-heading-s">Your National Insurance record</h2>
+  
+  <p>You’ll usually need at least 10 qualifying years on your <a href="https://gov.uk/new-state-pension/your-national-insurance-record-and-your-state-pension">National Insurance record</a> to get any State Pension. They do not have to be 10 qualifying years in a row.</p>
+  
+  <p>This means for 10 years at least one or more of the following applied to you:</p>
+  
+  <ul class="govuk-list govuk-list--bullet">
+  <li>you were working and paid <a href="https://gov.uk/new-state-pension/your-national-insurance-record-and-your-state-pension">National Insurance contributions</a>
+  </li>
+  <li>you were <a href="https://gov.uk/national-insurance-credits/eligibility">getting National Insurance credits</a> for example if you were unemployed, ill or a parent or carer</li>
+  <li>you were paying <a href="https://gov.uk/voluntary-national-insurance-contributions">voluntary National Insurance contributions</a>
+  </li>
+  </ul>
+  
+  <p>If you’ve <a href="https://gov.uk/new-state-pension/living-and-working-overseas">lived or worked abroad</a> you might still be able to get some new State Pension.</p>
+  
+  <p>You might also qualify if you’ve paid <a href="https://gov.uk/reduced-national-insurance-married-women">married women’s or widow’s reduced rate contributions</a>.</p>
+  
+  <h2 class="govuk-heading-s">Working after State Pension age</h2>
+  
+  <p>You do not have to stop working when you reach State Pension age but you’ll no longer have to pay <a href="/tax-national-insurance-after-state-pension-age/making-sure-youve-stopped-paying-national-insurance">National Insurance</a>. You can also request <a href="/flexible-working">flexible working arrangements</a>.</p>
+  
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/nsp_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}
