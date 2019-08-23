@@ -1,0 +1,98 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  The new State Pension
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Pension Credit
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+              <a class="gem-c-contents-list__link">  Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link"  href="#">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="#">How to claim</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="#">Report a change of circumstances</a>
+          </li>
+      </ol>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">Eligibility</h2>
+     
+
+    <p>Pension Credit is a benefit for people over State Pension age. It tops up your income if you're struggling to make ends meet.
+        
+        <p>Pension Credit is made up of 2 parts</p>
+  
+  
+  
+  <p>Guarantee Credit tops up your weekly income if it’s below £167.25 (for single people) or £255.25 (for couples).</p>
+
+   <p> Savings Credit is an extra payment for people who saved some money towards their retirement, for example a pension.</p>
+  
+  <h2 class="govuk-heading-m">Find out what support you could get in retirement</h2>
+  <p>Find out how much you could get and when.</p>
+  <p><a href="pension_age_start.html" class="govuk-button">Start now</a></p>
+
+  
+  
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/nsp_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}

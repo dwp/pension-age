@@ -1,0 +1,31 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+  Check your State Pension age
+{% endset%}
+{% block beforeContent %}
+ 
+{% endblock %}
+
+{% block content %}
+
+  
+    <div class="cams1">
+      <div style="float: left; width:267px; margin-top: 470px; margin-left: 260px; display: block; clear: both"> 
+          <select style="widows: 150px;">
+              <option value="">Select</option>
+              <option value="volvo">PC application</option>
+              <option value="saab">PC enquiry</option>
+              <option value="mercedes">Change of circumstances</option>
+  
+            </select>
+      </div> 
+      <div style="float: left; width:267px; margin-top: 17px; margin-left: 255px; display: block; clear: both"><button onclick="window.location.href='cam_s2'" style="background-color: #ccc; border-color: black; font-size: 0.6em">Next</button></div>
+    
+    </div>
+
+{% endblock %}

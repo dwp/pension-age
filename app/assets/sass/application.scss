@@ -241,6 +241,293 @@ text-decoration: none;
     line-height: 1.5;
 }
 
+// accordion
+.ni-table dd,
+accordion dd {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.accordion  {
+	border-top: 1px solid #bfc1c3;
+	border-bottom: 1px solid #bfc1c3;
+}
+
+.accordion2 dl {
+	margin-top: 100px;
+}
+
+
+.accordion2 dt,
+.ni-table dt {
+	border-top: 1px solid #bfc1c3;
+	padding-top: 10px;
+}
+
+.accordion2 dd {
+	padding-left: 23%;
+}
+
+.accordion3 dt,
+.ni-table dt {
+	border-top: 1px solid #bfc1c3;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+.ni-wrapper {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	padding: 12px 0 15px;
+}
+
+.ni-years {
+	width: 25%;
+	float: left;
+	font-size: 16px;
+}
+
+.ni-years2 {
+	width: 20%;
+	float: left;
+	font-size: 16px;
+}
+
+.ni-amount {
+	width: 30%;
+	float: left;
+	font-size: 16px;
+}
+
+.ni-QY {
+	width: 25%;
+	float: left;
+	font-size: 16px;
+	
+}
+
+.ni-years3 {
+	width: 23%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-amount3 {
+	width: 23%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-QY3 {
+	width: 20%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-future3 {
+	width: 23%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-action3 {
+	width: 10%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+
+.ni-improve4 {
+	width: 40%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-most4 {
+	width: 100%; 
+	padding: 5px; 
+	border-left: 5px solid #28A197; 
+	font-size: 16px; 
+	margin-top: 30px;
+	display: block;
+	clear: both;
+}
+
+.ni-gaps4 {
+	width: 20%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-amount4 {
+	width: 25%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+
+.ni-action4 {
+	width: 14%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-years4 {
+	width: 60%;
+	float: left;
+	font-size: 16px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-years4-year {
+	width: 33%;
+	float: left;
+    font-size: 16px;
+    margin-top: -20px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+.ni-years4-cost {
+	width: 60%;
+	float: left;
+    font-size: 16px;
+    margin-top: -20px;
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+
+
+
+.title {
+	cursor: pointer;
+	margin: 0;
+	color: #005ea5;
+	border: none;
+}
+
+.ni-cost {
+	width: 25%;
+	float: left;
+}
+
+.ni-payby {
+	width: 30%;
+	float: left;
+}
+
+.ni-full {
+	width: 40%;
+	float: left;
+	color: #999;
+}
+
+.ni-full2 {
+	color: #999;
+	font-size: 16px;
+}
+
+.ni-late {
+	width: 50%;
+	float: left;
+	color: #999;
+	font-size: 16px;
+}
+
+.ni-notfull {
+	width: 50%;
+	float: left;
+	font-size: 16px;
+}
+
+.ni-notfull2 {
+	width: 75%;
+	float: left;
+	font-size: 16px;
+
+}
+
+.ni-action {
+	width: 25%;
+	float: left;
+	text-align: right;
+	font-size: 16px;
+}
+
+.ni-action-arrow {
+	width: 6%;
+	float: right;
+	background-image: url("/public/20/images/down-arrow.png");
+	background-size: 17px 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.ni-action-arrow2 {
+	width: 6%;
+	float: right;
+	background-size: 32px 50px;
+	background-repeat: no-repeat;
+}
+
+.ni-action-check {
+	width: 50%;
+	float: left;
+	background-color: #000;
+}
+
+.vnics_highlight {
+	padding: 10px 0 10px 10px; 
+	margin: 20px 0 20px 0;
+	border-left: 10px solid #28A197;
+	display: block; 
+	clear: both;
+
+}
+
+dd {
+    display: block;
+    margin-inline-start: 0;
+}
 
 
 

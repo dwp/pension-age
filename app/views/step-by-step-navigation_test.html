@@ -1,0 +1,598 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Step by step navigation
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+   
+    
+       
+          <p>Check their circumstances to see if filling gaps can improve their pension.</p>
+          <div class="vnics_highlight">
+            <h3 class="govuk-heading-s">Estimate up to 5 April 2017 </h3>
+  
+            <p>
+              £120.54 a week (29 qualifying years) </p>
+          </div>
+
+         
+                 
+          <form>
+                <div class="govuk-form-group">      
+            <fieldset class="govuk-fieldset" data-required data-error="Choose Yes or No">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Are they still contributing National Insurance?</span>
+              </legend>
+          
+              <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="radio-1" type="radio" value="yes" name="increaseby" value="date" {% if years %} checked="checked" {% endif %}>      
+                            <label class="govuk-label govuk-radios__label" for="radio-1">Yes
+                                
+                                
+                </label>
+                </div>
+                <div class="govuk-radios__item">
+                        
+                        <input class="govuk-radios__input" id="radio-2" type="radio" name="increaseby" value="age" {% if age %} checked="checked" {% endif %}> 
+                        <label class="govuk-label govuk-radios__label" for="radio-2">No</label>
+  
+              </div>
+            </div>
+            </fieldset>
+            </form>
+  </div>
+          </form>
+  
+          <div id="date" {% if years==undefined %} style="display:none;" {% endif %}>
+                <form>
+                        <div class="govuk-form-group">      
+                    <fieldset class="govuk-fieldset" data-required data-error="Choose Yes or No">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                       When will they stop contributing?</span>
+                      </legend>
+                    
+                      <div class="govuk-radios govuk-radios--inline">
+                            
+                                    <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="spa" type="radio" name="spa" value="spa">
+
+
+
+                                            <label class="govuk-label govuk-radios__label" for="spa" style="margin-bottom: 10px">
+                  State Pension age (11 November 2025)
+                  </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="notspa" type="radio" name="spa" value="notspa" {% if years %} checked="checked" {% endif %}>
+                 <label class="govuk-label govuk-radios__label" for="notspa">
+                     Before State Pension age
+                  </label>
+                  </div>
+                  </div>
+                  
+  
+              
+                </fieldset>
+                
+            </form>
+
+
+            <div id="spaamount" style="display: none">
+                    <div class="vnics_highlight">
+                            <h3 class="govuk-heading-s">Forecast based on contributing until November 2025 </h3>
+                <p>
+                  £157.01 a week (37 qualifying years)</p>
+              </div>
+              <p class="govuk-heading-s">Can improve £157.01 a week by filling <span style="font-weight: 700;">Gaps</span> </p>
+              <div class="ni-wrapper" style="margin-bottom: -40px">
+                <div class="ni-improve4"> <p class="govuk-body-s"> <span style="font-weight: 700;">Improve to</span></p></span>
+                </div>
+                <div class="ni-gaps4"> <p class="govuk-body-s"> <span style="font-weight: 700;">Gaps</span></p></span>
+                </div>
+                <div class="ni-amount4"> <p class="govuk-body-s"> <span style="font-weight: 700;">Total cost</span></p></span>
+                </div>
+                <div class="ni-action4">
+                  <span style="font-weight: 700"></span>
+                </div>
+              </div>
+              <dl class="accordion3">
+  
+                <dt>
+                  <div class="ni-wrapper">
+  
+                    <div class="ni-improve4"> <p class="govuk-body-s">£159.55 a week</p></div>
+                    <div class="ni-gaps4"> <p class="govuk-body-s">1</p></div>
+                    <div class="ni-amount4"> <p class="govuk-body-s">£704.60</p></div>
+  
+                    <div class="ni-action4">
+                            <a href="#"> View details</a>
+                    </div>
+                    <div class="ni-most4"> <p class="govuk-body-s">Most can improve by filling gaps</p></div>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s">Will give an extra:
+                      <br> £2.54 a week
+                      <br> £132.08 a year
+                      <br></p>
+                    </div>
+  
+                    <div class="ni-years4"> <p class="govuk-body-s">Shortfalls:
+                            <div class="ni-years4-year"><p class="govuk-body-s">
+                      2013-14</div>
+                      <div class="ni-years4-cost"><p class="govuk-body-s">
+                      £704.60</div>
+                      
+                    </div>
+                  </div>
+                </dd>
+                <div style="border-bottom: 1px solid #bfc1c3; width: 100%; margin-top: -15px">&nbsp;</div>
+  
+              </dl>
+              <br>
+              <br>
+              <p>
+                <a href="#lie-options" id="start-spa" onclick="window.location.reload('')">Start again</a>
+              </p>
+            </div>
+</div>
+  
+            <div {% if years==undefined %} style="display:none;" {% endif %} id="notspaamount">
+             
+             
+                <form action="" class="form" method="post">
+                <h3 class="govuk-heading-s">What date will they stop?</h3>
+  
+                <fieldset class="govuk-fieldset" data-required data-error="Choose Yes or No">
+                  <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                    <legend class="small-paragraph"></legend>
+                    <p class="form-hint">For example, 3 2025</p>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label"> Month</label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="month" name="month" type="number" maxlength="2" pattern="[0-9]*" min="0" max="12" value="{{ month }}">
+                        </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="years" class="small-paragraph">Year</label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="years" name="years" type="number" maxlength="4" pattern="[0-9]*" min="2017" max="2029" value="{{ years }}">
+                    </div>
+                  </div>
+                </fieldset>
+                <button type="submit" class="govuk-button" id="button" style="margin-top: -20px" name="date" id="date">Calculate</button>
+              </form>
+  
+  
+              {% if years == '2022' %}
+             
+              <br>
+            
+              <div class="vnics_highlight">
+                    <h3 class="govuk-heading-s">Forecast based on contributing until November 2022 </h3>
+                <p>
+                  £143.34 a week (33 qualifying years)  </p>
+              </div>
+              <p class="govuk-heading-s">Can improve £143.34 a week by filling gaps</span> </p>
+              <div class="ni-wrapper" style="margin-bottom: -40px">
+                <div class="ni-improve4"> <p class="govuk-body-s"> 
+                  <span style="font-weight: 700;">Improve to</span></p>
+                </div>
+                <div class="ni-gaps4">  <p class="govuk-body-s"><span style="font-weight: 700;">Gaps</span></p>
+                </div>
+                <div class="ni-amount4"> <p class="govuk-body-s"><span style="font-weight: 700;"> Total cost</span></p>
+                </div>
+                <div class="ni-action4">
+                  <span style="font-weight: 700"></span>
+                </div>
+              </div>
+              <dl class="accordion3">
+  
+                <dt>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> £147.42 a week</div>
+                    <div class="ni-gaps4"> <p class="govuk-body-s"> 1</div>
+                    <div class="ni-amount4"> <p class="govuk-body-s"> £704.60</div>
+  
+                    <div class="ni-action4">
+                      <a href="#">View details</a>
+                    </div>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                      <br> £4.08 a week
+                      <br> £212.16 a year
+                      <br>
+                    </div>
+  
+                    <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                            <div class="ni-years4-year"><p class="govuk-body-s">
+                      2013-14</div>
+                      <div class="ni-years4-cost"><p class="govuk-body-s">£704.60</div>
+  
+                    </div>
+                  </div>
+                </dd>
+  
+                <dt>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> £147.90 a week</div>
+                    <div class="ni-gaps4"> <p class="govuk-body-s"> 1</div>
+                    <div class="ni-amount4"> <p class="govuk-body-s"> £733.20</div>
+  
+                    <div class="ni-action4">
+                      <a href="#">View details</a>
+                    </div>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                      <br> £4.56 a week
+                      <br> £237.12 a year
+                      <br>
+                    </div>
+  
+                    <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                            <div class="ni-years4-year"><p class="govuk-body-s">
+                     2016-17</div>
+                      <div class="ni-years4-cost"><p class="govuk-body-s">£733.20</div>
+  
+                    </div>
+                  </div>
+                </dd>
+  
+  
+                <dt>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> £151.98 a week</div>
+                    <div class="ni-gaps4"> <p class="govuk-body-s"> 2</div>
+                    <div class="ni-amount4"> <p class="govuk-body-s"> £1,437.80</div>
+                    <div class="ni-action4">
+                      <a href="#">View details</a>
+                    </div>
+                    <div class="ni-most4"> <p class="govuk-body-s"> Most can improve by filling gaps</div>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="ni-wrapper">
+                    <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                      <br> £8.64 a week
+                      <br>£449.28 a year
+                      <br>
+                    </div>
+  
+                    <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                      <br>
+                      <div class="ni-years4-year"><p class="govuk-body-s">2016-17</div>
+                      <div class="ni-years4-cost"><p class="govuk-body-s">£733.20</div>
+                      <div class="ni-years4-year"><p class="govuk-body-s">2013-14</div>
+                      <div class="ni-years4-cost"><p class="govuk-body-s">£704.60</div>
+  
+                    
+                  </div>
+                </dd>
+  
+                <div style="border-bottom: 1px solid #bfc1c3; width: 100%; margin-top: -15px">&nbsp;</div>
+  
+  
+  
+  
+              </dl>
+  
+  
+              <br>
+              <br>
+              <p>
+                <a href="#lie-options" id="start-spa" onclick="window.location.reload('')">Start again</a>
+              </p>
+  
+  
+  
+  
+              {% else %} {% endif %}
+            </div>
+          </div>
+  
+          <div id="age" {% if age==undefined %} style="display:none;" {% endif %}>
+  
+            <p class="govuk-heading-s">Can improve £120.54 a week by filling <span style="font-weight: 700;">Gaps</span> </p>
+            <div class="ni-wrapper" style="margin-bottom: -40px">
+              <div class="ni-improve4"> <p class="govuk-body-s"> 
+                 <span style="font-weight: 700;">Improve to</span>
+              </div>
+              <div class="ni-gaps4"> <p class="govuk-body-s"> 
+                <span style="font-weight: 700;">Gaps</span>
+              </div>
+              <div class="ni-amount4"> <p class="govuk-body-s"> 
+                <span style="font-weight: 700;">Total cost</span>
+              </div>
+              <div class="ni-action4">
+                <span style="font-weight: 700"></span>
+              </div>
+            </div>
+            <dl class="accordion3">
+  
+              <dt>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> £124.62 a week</div>
+                  <div class="ni-gaps4"> <p class="govuk-body-s"> 1</div>
+                  <div class="ni-amount4"> <p class="govuk-body-s"> £704.60</div>
+  
+                  <div class="ni-action4">
+                    <a href="#">View details</a>
+                  </div>
+                </div>
+              </dt>
+              <dd>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                    <br> £4.08 a week
+                    <br> £212.16 a year
+                    <br>
+                  </div>
+  
+                  <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                
+                        <div class="ni-years4-year"><p class="govuk-body-s">2013-14</div>
+                        <div class="ni-years4-cost"><p class="govuk-body-s">£704.60</div>
+  
+                  </div>
+                </div>
+              </dd>
+  
+              <dt>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> £125.10 a week</div>
+                  <div class="ni-gaps4"> <p class="govuk-body-s"> 1</div>
+                  <div class="ni-amount4"> <p class="govuk-body-s"> £733.20</div>
+  
+                  <div class="ni-action4">
+                    <a href="#">View details</a>
+                  </div>
+                </div>
+              </dt>
+              <dd>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                    <br> £4.56 a week
+                    <br> £237.12 a year
+                    <br>
+                  </div>
+  
+                  <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                    <br>
+                    <div class="ni-years4-year"><p class="govuk-body-s">2016-17</div>
+                    <div class="ni-years4-cost"><p class="govuk-body-s">£733.20</div>
+  
+                  </div>
+                </div>
+              </dd>
+  
+  
+              <dt>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> £129.18 a week</div>
+                  <div class="ni-gaps4"> <p class="govuk-body-s"> 2</div>
+                  <div class="ni-amount4"> <p class="govuk-body-s"> £1,437.80</div>
+                  <div class="ni-action4">
+                    <a href="#">View details</a>
+                  </div>
+                  <div class="ni-most4"> <p class="govuk-body-s"> Most can improve by filling gaps</div>
+                </div>
+  
+              </dt>
+              <dd>
+                <div class="ni-wrapper">
+                  <div class="ni-improve4"> <p class="govuk-body-s"> Will give an extra:
+                    <br> £8.64 a week
+                    <br> £449.28 a year
+                    <br>
+                  </div>
+  
+                  <div class="ni-years4"> <p class="govuk-body-s"> Shortfalls:
+                    <br>
+                    <div class="ni-years4-year"><p class="govuk-body-s">2016-17</div>
+                    <div class="ni-years4-cost"><p class="govuk-body-s">£733.20</div>
+                   <div class="ni-years4-year"><p class="govuk-body-s">2013-14</div>
+                   <div class="ni-years4-cost"><p class="govuk-body-s">£704.60</div>
+  
+                  </div>
+                </div>
+              </dd>
+              <div style="border-bottom: 1px solid #bfc1c3; width: 100%; margin-top: -15px">&nbsp;</div>
+  
+  
+  
+  
+  
+            </dl>
+            <br>
+            <br>
+            <p>
+              <a href="#lie-options" id="start-spa" onclick="window.location.reload('')">Start again</a>
+            </p>
+  
+      
+
+
+
+
+      </dl>
+    </div>
+
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+  // function show(elementId) {
+  //   document.getElementById("id1").style.display = "none";
+  //   document.getElementById("id2").style.display = "block";
+  //   document.getElementById(elementId).style.display = "block";
+  // }
+
+
+  jQuery(document).ready(function ($) {
+
+    $("a#tab-overview").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#forecast").show();
+      $("#ni-record").hide();
+      $("#contracting-out").hide();
+      $("#contracting-out").hide();
+      $("#options").hide();
+      window.location.hash = "#lie-forecast";
+      return false;
+    });
+
+    $("a#tab-options").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#options").show();
+      $("#forecast").hide();
+      $("#ni-record").hide();
+      $("#contracting-out").hide();
+      window.location.hash = "#lie-options";
+      return false;
+    });
+
+    $("a#tab-ni-record").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#ni-record").show();
+      $("#contracting-out").hide();
+      $("#forecast").hide();
+      $("#options").hide();
+      window.location.hash = "#lie-ni-record";
+      return false;
+    });
+
+
+    $("a#tab-contracting-out").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#contracting-out").show();
+      $("#ni-record").hide();
+      $("#forecast").hide();
+      $("#options").hide();
+      window.location.hash = "#lie-contracting-out";
+      return false;
+    });
+
+    if (window.location.hash === "#lie-forecast") {
+      $("a#tab-overview").trigger('click');
+    }
+    else if (window.location.hash === "#lie-ni-record") {
+      $("a#tab-ni-record").trigger('click');
+    }
+
+    else if (window.location.hash === "#lie-contracting-out") {
+      $("a#tab-contracting-out").trigger('click');
+    }
+
+    else if (window.location.hash === "#lie-options") {
+      $("a#tab-options").trigger('click');
+    }
+  });
+
+  $(document).on('click', 'input[type="radio"]', function (e) {
+    if ($(e.target).attr('id') === 'radio-1' || $(e.target).attr('id') === 'radio-2') {
+      if ($(this).attr('id') === 'radio-1') {
+        $('#date').show();
+        $('#age').hide();
+      } else {
+        $('#age').show();
+        $('#date').hide();
+      }
+    }
+  });
+
+  $(document).on('click', 'input[type="radio"]', function (e) {
+    if ($(e.target).attr('id') === 'spa' || $(e.target).attr('id') === 'notspa') {
+      if ($(this).attr('id') === 'spa') {
+        $('#spaamount').show();
+        $('#notspaamount').hide();
+      } else {
+        $('#spaamount').hide();
+        $('#notspaamount').show();
+      }
+    }
+  });
+
+  var allPanels = $('.accordion3 > dd').hide(),
+    allHeaders = $('.accordion3 > dt');
+
+  $('.accordion3 > dt').click(function () {
+    // $(this).parent().children("dd")
+    //   // .hide()
+    //   // .removeClass('active');
+
+    // $(this).parent().children("dt")
+    //   .children('span')
+    //   .removeClass('down');
+
+    if (!$(this).hasClass('active')) {
+      // $(this).parent().children("dt")
+      //   .removeClass('active');
+
+      $(this)
+        .addClass('active')
+        .next()
+        .show();
+
+      $(this).find("a").text("Hide details");
+
+      $(this)
+        .children('span')
+        .addClass('down');
+    }
+    else {
+      $(this)
+        .removeClass('active')
+        .next()
+        .hide();
+
+      $(this).find("a").text("View details");
+    }
+
+    return false;
+  });
+
+</script>
+{% endblock %}

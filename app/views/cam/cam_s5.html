@@ -1,0 +1,25 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+  Check your State Pension age
+{% endset%}
+{% block beforeContent %}
+ 
+{% endblock %}
+
+{% block content %}
+
+  
+    <div class="cams5">
+            <div style="float: left; width:600px; margin-top: 435px; margin-left: 255px; display: block; clear: both"><input type="radio" name="gender" value="male"> <br>
+                <input type="radio" name="gender" value="female"> <br>
+            </div>
+      <div style="float: left; width:267px; margin-top: 20px; margin-left: 255px; display: block; clear: both"><button onclick="window.location.href='cam_s6'" style="background-color: #ccc; border-color: black; font-size: 0.6em">Next</button></div>
+    
+    </div>
+
+{% endblock %}
