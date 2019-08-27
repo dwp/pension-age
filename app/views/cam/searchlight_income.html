@@ -1,0 +1,28 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+  Check your State Pension age
+{% endset%}
+{% block beforeContent %}
+ 
+{% endblock %}
+
+{% block content %}
+
+  
+    <div class="searchlight3">
+      <img src="/public/images/searchlight_income.png" usemap="#image-map" style="margin-top:200px">
+
+<map name="image-map">
+    <area target="" alt="Personal" title="Personal" href="searchlight_personal" coords="5,190,153,234" shape="rect">
+    <area target="" alt="Benefits" title="Benefits" href="searchlight_benefits" coords="424,185,504,233" shape="rect">
+    <area target="" alt="Income" title="Income" href="searchlight_income" coords="640,183,730,232" shape="rect">
+    <area target="" alt="Home" title="Home" href="searchlight1" coords="18,12,225,47" shape="rect"></map>
+     
+    </div>
+
+{% endblock %}
