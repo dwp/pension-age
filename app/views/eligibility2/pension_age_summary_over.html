@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+Find out what support you could get in retirement
+{% endset%}
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_partner">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is more than 4 months away from their SP date-->
+     
+      <h1 class="govuk-heading-xl">
+        You can apply now </h1> 
+       <p>Because you reached State Pension age on <b>6 August 2019</b> you can apply for the following:</p>
+       <h2 class="govuk-heading-m">State Pension</h2>
+       <p> You can get your State Pension now if you haven't already claimed it.</p>
+       
+              
+       <h2 class="govuk-heading-m">Free bus pass</h2>
+        <p>You can apply to get a bus pass for free travel in England.</p>
+ 
+        <h2 class="govuk-heading-m">Winter Fuel Payment</h2>
+      <p>You could get a payment of
+     £100 every year to help with your heating bill.
+        </p>
+
+     
+        <h2 class="govuk-heading-m">Pension Credit </h2>
+        <p>You could get Pension Credit 
+       to top up your State Pension to £255.25 a week if your income as a couple if less than that.
+          <p>
+         
+
+    
+          <p>If you’re eligible, Pension Credit could also help you get other benefits too. For example, reduced Council Tax, Housing Benefit to help pay your rent and free medical treatments.</p>
+        
+
+          <h2 class="govuk-heading-m">Next steps</h2>
+          <p>You need to provide some personal details and your National Insurance number to find out your exactly what you could get.</p>
+       
+        <p><a href="pension_age_your_details" class="govuk-button">Continue</a></p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
