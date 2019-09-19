@@ -74,6 +74,24 @@ $govuk-global-styles: true;
 }
 }
 
+.app-c-tag {
+    background-color: #005ea5;
+    color: #fff;
+    display: inline-block;
+    font-family: 'nta', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    padding: 5px 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+  .app-c-tag--ready {
+    background-color: #1c8119;
+}
+
 
 .gem-c-contents-list__list-item {
     padding-top: 7.5px;
@@ -91,6 +109,14 @@ $govuk-global-styles: true;
     margin-left: -25px;
     padding-right: 5px;
 }
+
+.gem-c-contents-list__list-item--dashed2::before {
+    content: "— ";
+    margin-left: -25px;
+    padding-right: 5px;
+}
+
+
 
 .related-content
 {
@@ -230,6 +256,11 @@ text-decoration: none;
 .gem-c-related-navigation__section-link {
     font-weight: bold;
     margin-left: -40px
+}
+
+.gem-c-related-navigation__section-link2 {
+    font-weight: bold;
+
 }
 
 .gem-c-related-navigation__link {
@@ -527,6 +558,10 @@ accordion dd {
 dd {
     display: block;
     margin-inline-start: 0;
+}
+
+.app-c-tag--danger {
+    background-color: #df3034;
 }
 
 
