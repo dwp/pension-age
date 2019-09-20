@@ -1,0 +1,66 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% set serviceName %}
+  Get your State Pension
+{% endset%}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+
+        <div class="govuk-width-container">
+            <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                  <div class="govuk-panel govuk-panel--confirmation">
+                    <h1 class="govuk-panel__title">
+                      Application complete
+                    </h1>
+                    <div class="govuk-panel__body">
+                      Your reference number<br><strong>is your National Insurance number</strong>
+                    </div>
+                  </div>
+          
+                  
+          
+                  <h2 class="govuk-heading-m">What happens next</h2>
+          
+                  <p class="govuk-body">
+                   You will receive your first payment of £109.80 on Wednesday 14 October 2019 and 
+                  every week after that.</p>
+                  <h2 class="govuk-heading-m">If your circumstances change</h2>
+                  <p class="govuk-body">
+                    You must report the following changes straight away.</p>
+                  
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>change of address</li>
+                        <li>bank details</li>
+                        <li>death of a partner or spouse</li>
+                        <li>separation from a partner or spouse</li>
+                        </ul>
+
+                        <h2 class="govuk-heading-m">Other support available to you retirement</h2>
+          
+                        <p class="govuk-body">
+                         You will get a Winter Fuel payment of £100 in November 2019 to help with your heating bill.</p>
+                         <p>You can apply for a Bus Pass for free travel in England.</p>
+                             <p>You may be eligible for Pension Credit to top up your State Pension. If you’re eligible, Pension Credit could also help you get other support.</p>
+                            <p><a href="/eligibility2/pension_age_eligibility" class="govuk-button">Check what support you can get</a></p>
+                  <p class="govuk-body">
+                    <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+                  </p>
+                </div>
+              </div>
+            </main>
+          </div>
+    </div>
+
+   
+{% endblock %}
