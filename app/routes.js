@@ -95,10 +95,31 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
   
     let dobyear = req.session.data['dob-year']
   
-    if (dobyear === '1950') {
+    if (dobyear <= '1954') {
       res.redirect('/eligibility2/pension_age_country_over')
     } else {
       res.redirect('/eligibility2/pension_age_country')
+    }
+  })
+
+  router.post('/pension_age_answer', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let dobyear = req.session.data['dob-year']
+  
+    if (dobyear <= '1954') {
+      res.redirect('/pension_age_sex')
+    } 
+    else if (dobyear <= '1960') {
+      res.redirect('/pension_age_answer3')
+    }
+    else if (dobyear >='1988') {
+      res.redirect('/pension_age_answer4')
+    }
+    else {
+      res.redirect('/pension_age_answer')
     }
   })
 
