@@ -109,12 +109,16 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
   
     let dobyear = req.session.data['dob-year']
   
-    if (dobyear <= '1954') {
+    if (dobyear < '1954') {
       res.redirect('/pension_age_sex')
     } 
+    else if (dobyear === '1954') {
+      res.redirect('/pension_age_answer_alt')
+    }
     else if (dobyear <= '1960') {
       res.redirect('/pension_age_answer3')
     }
+
     else if (dobyear >='1988') {
       res.redirect('/pension_age_answer4')
     }
