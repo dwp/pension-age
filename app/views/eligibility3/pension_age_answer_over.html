@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Passed SP date
+{% endblock %}
+{% set serviceName %}
+  Check your State Pension age
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_sex">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user has passed their SP date-->
+
+      <h1 class="govuk-heading-xl">
+   You can get your State Pension now
+      </h1>
+      <p>You reached State Pension age on <strong>6 November 2018</strong>, when you turned <strong>66</strong>.</p>
+
+      <h2 class="govuk-heading-l">If you haven't claimed your State Pension</h2>
+      
+      <p>Because you have reached State Pension age, you can choose to either:</p>
+      <ul class="govuk-list govuk-list--bullet">
+          <li>make a claim to <a href="https://www.gov.uk/get-state-pension">get your State Pension</a></li>
+          <li><a href="https://www.gov.uk/deferring-state-pension">delay getting your State Pension</a> - you may get 
+            more State Pension when you claim it</li>
+      
+      </ul>
+ 
+        <h2 class="govuk-heading-l">If you have claimed your State Pension</h2>
+      <p>If you need to </p>
+
+      <h2 class="govuk-heading-l">What else you could get</h2>
+      <p>You may also be eligible for:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">Winter Fuel Payment</a> - you'll automatically get this if you're getting State Pension</li>
+        <li><a href="">Pension Credit</a> - if you're on a low income, you may be able to get this</li>
+        <li><a href="pension_age_bus_pass">a bus pass</a> - the age you can apply depends on
+           where you live in the UK</li>
+        
+      </ul>
+
+
+   
+
+
+    </div>
+  </div>
+
+{% endblock %}

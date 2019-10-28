@@ -1,0 +1,93 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your State Pension age (prototype)
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Apply for an older person's bus pass
+      </h1>
+      <h2 class="govuk-heading-m">If you live in England or Wales</h2>
+      <p>In England you can get a bus pass for free travel when you reach <a href="pension_age_dob.html">State Pension age</a>.</p>
+
+      <p>If you live in London, you can <a href="">travel free on buses, tubes and other transport</a> when you’re 60, but only within London.</p>
+      </p>
+      <p>In Wales you can get a bus pass when you reach 60.
+    </p>
+      <p></p>
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+           <b>Enter your postcode to apply for a bus pass from your local council</b> 
+        </label>
+     
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" aria-describedby="address-postcode-error">
+      </div>
+      <a href="pension_age_dob" role="button" class="govuk-button">Continue</a>
+      <p><a href="">Find a postcode on Royal Mail's postcode finder</a></p>
+
+      <h2 class="govuk-heading-m">If you live in Scotland or Northern Ireland</h2>
+     
+      <p>You get an older person’s bus pass when you’re 60. </p>
+        <p>Apply if you'e in:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li><a href="">Scotland</a></li>
+            <li><a href="">Northern Ireland</a></li>
+        </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Check your State Pension forecast
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Planning your retirement income
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-size-16">
+                State Pension age review<span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
