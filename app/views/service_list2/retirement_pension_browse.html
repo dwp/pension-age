@@ -1,4 +1,4 @@
-  {% extends "layout.html" %}
+  {% extends "layout2.html" %}
 
 {% block pageTitle %}
   Start page example
@@ -8,32 +8,74 @@
 {% block header %}
   <!-- Blank header with no service name for the start page -->
   {{ govukHeader() }}
+  <style>
+  .govuk-header__container {
+    border-bottom: hidden;
+    padding-bottom: 10px;
+  }
+  .govuk-breadcrumbs__link:link
+  {color: #fff}
+
+  .govuk-breadcrumbs__link:visited
+  {color: #fff}
+
+  .govuk-breadcrumbs__link:hover
+  {color: #fff}
+
+  .govuk-breadcrumbs__link:active
+  {color: #fff}
+
+  .govuk-breadcrumbs__link:focus 
+  {color: #fff}
+
+  .govuk-heading-l
+  {margin-top: 50px;}
+
+  </style>
+  <div style="background-color: #005ea5; margin-top: -10px">
+   <div class="govuk-width-container">
+        
+  
+ 
+
+        <main class="govuk-width-container" style="margin-top: -10px">
+          
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link blue-panel" href="#">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link blue-panel" href="retirement_pension_browse1.html">Benefits and support</a>
+          </li>
+    
+        </ol>
+      </div>
+    
+      <h1 class="govuk-heading-l blue-panel">Retirement and pensions</p>
+  <p class="blue-panel">Find out when you can get your State Pension and what other support you could be entitled to in retirement.</p>
+  <p><a href="/eligibility2/pension_age_start" class="blue-panel">Check your eligibility</a></p>
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="retirement_pension_browse1.html">Benefits and support</a>
-      </li>
-
-    </ol>
-  </div>
+  
+ 
 {% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
 
-      <div id="subsection" class="subsection-pane pane with-sort">
-          <div style="width: 40%; float: left"><img src="/public/images/list2_cut_down.png"></div>
-        <div style="width: 60%; float: left;">
-   
+     
     
-     <h2 class="govuk-heading-m">Retirement and pensions</h2>  
+  
      <p><b>Plan for retirement</b></p>
         <ul class="a-to-z">
                 <li>
@@ -46,7 +88,7 @@
                                 <a href="https://www.gov.uk/deferring-state-pension">Delay (defer) your State Pension</a>
                               </li>
                               <li>
-                                    <a href="https://draft-origin.publishing.service.gov.uk/plan-for-retirement?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNTM0NjQzMy02MjYyLTQ5MzgtYjc2MS0zMzYxMzk2NDYyMzYifQ.8p4ldQbJISNjK4MQZp4c3Qoas81cDGwE91egOxHD1rc">Plan your retirement income step-by-step</a>
+                                    <a href="https://www.gov.uk/plan-for-retirement">Plan your retirement income step-by-step</a>
                                   </li>
                         </ul>
 
@@ -58,7 +100,7 @@
                                       </li>
                              
                                         
-                                     
+                                            
                                                
                                               <li>
                                                       <a href="https://www.gov.uk/pension-credit  ">Pension Credit</a>
@@ -70,8 +112,8 @@
                                                         <a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Apply for a bus pass</a>
                                                       </li>
                                                       <li>
-                                                          <a href="/contact_pension_service">Report a change</a>
-                                                        </li>
+                                                        <a href="/contact_pension_service">Report a change or ask a question</a>
+                                                      </li>
                                     </ul>
                                     
 
