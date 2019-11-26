@@ -564,6 +564,14 @@ dd {
     background-color: #df3034;
 }
 
+.blue-panel-container {
+	background-color: #005ea5; margin-top: -10px;
+	@media only screen and (max-width: 640px) {
+		margin-top: -30px
+	}
+
+}
+
 .blue-panel {
 	color: #fff
 }
@@ -589,4 +597,8 @@ dd {
     padding-top: 20px;
 }
 
-
+.govuk-breadcrumbs {
+@media only screen and (max-width: 640px) {
+	padding-top: 20px
+}
+}
