@@ -1,0 +1,169 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+<style>
+  .govuk-header__container {
+    border-bottom: hidden;
+    padding-bottom: 10px;
+  }
+
+  .govuk-breadcrumbs__link:link {
+    color: #fff
+  }
+
+  .govuk-breadcrumbs__link:visited {
+    color: #fff
+  }
+
+  .govuk-breadcrumbs__link:hover {
+    color: #fff
+  }
+
+  .govuk-breadcrumbs__link:active {
+    color: #fff
+  }
+
+  .govuk-breadcrumbs__link:focus {
+    color: #fff
+  }
+
+  .govuk-heading-l {
+    margin-top: 50px;
+  }
+
+  .govuk-button {
+    background: #fff;
+    color: #005ea5;
+    font-weight: bold;
+    -webkit-box-shadow: 0 2px 0 #003259;
+    box-shadow: 0 2px 0 #003259;
+  }
+
+  .govuk-button:hover {
+    background: #fff;
+    color: #005ea5;
+    font-weight: bold;
+    -webkit-box-shadow: 0 2px 0 #003259;
+    box-shadow: 0 2px 0 #003259;
+  }
+</style>
+<div class="blue-panel-container">
+
+    <main class="govuk-width-container" style="margin-top: -10px">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <div class="govuk-breadcrumbs">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link blue-panel" href="#">Home</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link blue-panel" href="retirement_pension_browse1.html">Benefits and
+                  support</a>
+              </li>
+
+            </ol>
+          </div>
+
+          <h1 class="govuk-heading-l blue-panel">Retirement and pensions</p>
+            <p class="blue-panel">Find out when you can get your State Pension and what other support you could be
+              entitled to in retirement.</p>
+            <p><a href="/eligibility2/pension_age_start" class="govuk-button"><span style="color: #005ea5;">Check your
+                  eligibility</span></a></p>
+        </div>
+      </div>
+      </main>
+  </div>
+{% endblock %}
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="landing-page__section-list-wrapper">
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Plan for your retirement</h3>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+
+    
+          <p>
+            <a href="/check_start">Find out how much State Pension you could get and if you can improve it</a>
+          </p>
+          <p>
+            <a href="https://www.gov.uk/plan-for-retirement">Plan your retirement income step-by-step</a>. Check what to do to prepare for your retirement and decide when to retire.
+          </p>
+         
+
+   
+      </div>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="landing-page__section-list-wrapper">
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-s">Get your State Pension and other support in retirement</h3>
+    </div>
+
+        <div class="govuk-grid-column-two-thirds">
+
+     
+
+       
+            <p>
+                <a href="/get_start">Get your State Pension</a>
+              </p>
+
+
+
+
+              <p>You may be entitled to other support.</p>
+              <p>  <a href="https://www.gov.uk/pension-credit  ">Pension Credit</a> if you're on a low income.</p>
+          
+      
+              <p><a href="https://www.gov.uk/winter-fuel-payment">Winter Fuel Payments</a> to help with your heating bills.</p>
+            
+                <p> <a href="https://www.gov.uk/apply-for-elderly-person-bus-pass">Apply for a bus pass</a> to get free travel.
+              </p>
+             
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="landing-page__section-list-wrapper">
+        <div class="govuk-grid-column-one-third">
+         &nbsp;
+        </div>
+    
+            <div class="govuk-grid-column-two-thirds">
+    
+         
+    
+           
+                <p>
+                    <a href="#">Report a change</a>
+                  </p>
+                  <p>
+                    <a href="/nsp/nsp_overview">More information of the State Pension</a>
+                  </p>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

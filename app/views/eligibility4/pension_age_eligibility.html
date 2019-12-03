@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+Get support in retirement
+{% endset%}
+{% block beforeContent %}
+<style>
+    .govuk-button {
+      margin-bottom: 10px
+    }
+    </style>
+ 
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is more than 4 months away from their SP date-->
+     
+      <h1 class="govuk-heading-xl">
+        Support available to you </h1> 
+       <p>Because you reached State Pension age on <b>6 August 2019</b> you can get the following support. This is based on the information you provided and what DWP hold on you.</p>
+
+       <h2 class="govuk-heading-m">You're already getting</h2>
+
+       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key" style="width: 40%">
+             State Pension
+           </dt>
+           <dd class="govuk-summary-list__value">
+             £109.80 a week
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <a class="govuk-link" href="#">
+               View details<span class="govuk-visually-hidden"> State Pension</span>
+             </a>
+           </dd>
+         </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+             Winter Fuel Payments
+           </dt>
+           <dd class="govuk-summary-list__value">
+             £100 a year
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <a class="govuk-link" href="#">
+               View details<span class="govuk-visually-hidden"> Winter Fuel</span>
+             </a>
+           </dd>
+         </div>
+         
+         
+       </dl>
+
+       <h2 class="govuk-heading-m">Support you could get</h2>
+
+       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key" style="width: 40%">
+             Pension Credit
+           </dt>
+           <dd class="govuk-summary-list__value">
+             Up to £50 a week
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <a class="govuk-button" href="#">
+               Apply now
+             </a>
+           </dd>
+         </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+             Free bus pass
+           </dt>
+           <dd class="govuk-summary-list__value">
+             Free travel in England
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <a class="govuk-button" href="#">
+               Apply now
+             </a>
+           </dd>
+         </div>
+        
+       </dl>
+
+      
+
+    </div>
+  </div>
+
+{% endblock %}

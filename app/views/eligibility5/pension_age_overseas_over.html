@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+Find out what support you could get in retirement
+{% endset%}
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_country">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is more than 4 months away from their SP date-->
+     <h1 class="govuk-heading-xl">
+        You can apply now </h1> 
+       <p>Because you reached State Pension age on <b>6 August 2019</b> you can apply for the following:</p>
+       <h2 class="govuk-heading-m">State Pension</h2>
+       <p> You can get your State Pension now if you haven't already claimed it.</p>
+       
+     
+      
+       
+       <h2 class="govuk-heading-m">Winter Fuel Payment</h2>
+       <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak">
+        <p>Even if you live overseas when you reach State Pension age you may be eligible for a Winter Fuel Payment if both the following apply:</p>
+
+  
+  <ul class="govuk-list govuk-list--bullet">
+    <li>you live in Switzerland or a <a href="/eu-eea">European Economic Area (<abbr title="European Economic Area">EEA</abbr>)</a> country</li>
+    <li>you have a genuine link to the UK - this is decided on an individual basis, and can include personal and family circumstances</li>
+  </ul>
+  
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+  <p>You can not get the payment if you live in Cyprus, France, Gibraltar, Greece, Malta, Portugal or Spain because the average winter temperature is higher than the warmest region of the UK.</p>
+  
+  <h2 class="govuk-heading-l">Next steps</h2>
+  <p>You need to provide some personal details and your National Insurance number to find out exactly how much you could get and apply.</p>
+
+<p><a href="pension_age_your_details" class="govuk-button">Get support in retirement</a></p>
+
+<h2 class="govuk-heading-l">Support you can not get</h2>
+       <h2 class="govuk-heading-m">Free bus pass</h2>
+       <p>You cannot get a UK free bus pass if you live permanently overseas.</p>
+       
+       <h2 class="govuk-heading-m">Pension Credit </h2>
+       <p>You cannot get Pension Credit if you live permanently overseas.
+
+  
+         
+      
+       <p><a href="pension_age_start">Start again</a></p>
+
+      
+       
+
+
+    </div>
+  </div>
+
+{% endblock %}

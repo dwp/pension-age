@@ -158,6 +158,129 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
   })
 
 
+  // eligibility checker 4
+
+  router.post('/eligibility5/pension_age_partner', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let whereLive = req.session.data['where-do-you-live']
+  
+    if (whereLive === 'overseas') {
+      res.redirect('/eligibility5/pension_age_overseas')
+    } else {
+      res.redirect('/eligibility5/pension_age_partner')
+    }
+  })
+
+
+  router.post('/eligibility5/pension_age_partner_over', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let whereLive = req.session.data['where-do-you-live']
+  
+    if (whereLive === 'overseas') {
+      res.redirect('/eligibility5/pension_age_overseas_over')
+    } else {
+      res.redirect('/eligibility5/pension_age_partner_over')
+    }
+  })
+  
+  router.post('/eligibility5/pension_age_summary', function (req, res) {
+      // Get the answer from session data
+      // The name between the quotes is the same as the 'name' attribute on the input elements
+      // However in JavaScript we can't use hyphens in variable names
+    
+      let partner = req.session.data['partner']
+    
+      if (partner === 'partner-no') {
+        res.redirect('/eligibility5/pension_age_summary_single')
+      } else {
+        res.redirect('/eligibility5/pension_age_summary')
+      }
+    })
+
+
+
+  router.post('/eligibility5/pension_age_country_over', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let dobyear = req.session.data['dob-year']
+  
+    if (dobyear <= '1954') {
+      res.redirect('/eligibility5/pension_age_country_over')
+    } else {
+      res.redirect('/eligibility5/pension_age_country')
+    }
+  })
+
+  // eligibility checker 4
+
+  router.post('/eligibility4/pension_age_partner', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let whereLive = req.session.data['where-do-you-live']
+  
+    if (whereLive === 'overseas') {
+      res.redirect('/eligibility4/pension_age_overseas')
+    } else {
+      res.redirect('/eligibility4/pension_age_partner')
+    }
+  })
+
+
+  router.post('/eligibility4/pension_age_partner_over', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let whereLive = req.session.data['where-do-you-live']
+  
+    if (whereLive === 'overseas') {
+      res.redirect('/eligibility4/pension_age_overseas_over')
+    } else {
+      res.redirect('/eligibility4/pension_age_partner_over')
+    }
+  })
+  
+  router.post('/eligibility4/pension_age_summary', function (req, res) {
+      // Get the answer from session data
+      // The name between the quotes is the same as the 'name' attribute on the input elements
+      // However in JavaScript we can't use hyphens in variable names
+    
+      let partner = req.session.data['partner']
+    
+      if (partner === 'partner-no') {
+        res.redirect('/eligibility4/pension_age_summary_single')
+      } else {
+        res.redirect('/eligibility4/pension_age_summary')
+      }
+    })
+
+
+
+  router.post('/eligibility4/pension_age_country_over', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let dobyear = req.session.data['dob-year']
+  
+    if (dobyear <= '1954') {
+      res.redirect('/eligibility4/pension_age_country_over')
+    } else {
+      res.redirect('/eligibility4/pension_age_country')
+    }
+  })
+
+
   
   
   

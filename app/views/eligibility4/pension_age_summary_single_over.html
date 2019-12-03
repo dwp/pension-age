@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+Find out what support you could get in retirement
+{% endset%}
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_partner">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is more than 4 months away from their SP date-->
+     
+      <h1 class="govuk-heading-xl">
+        You can apply now4 </h1> 
+       <p>You reached State Pension age on <b>6 August 2019</b></p>
+       <h2 class="govuk-heading-m">State Pension</h2>
+       <p> You can get your State Pension now.</p>
+      
+       <p>Because you have reached State Pension age, you can choose to either:</p>
+         <ul class="govuk-list govuk-list--bullet">
+             <li>make a claim to get your State Pension</li>
+             <li><a href="https://www.gov.uk/deferring-state-pension">delay getting your State Pension</a> - you may get 
+               more State Pension when you claim it</li>  
+               </ul> 
+               <p><a href="">More on the new State Pension</a></p>
+       <h2 class="govuk-heading-m">Free bus pass</h2>
+        <p>Because you have reached State Pension age you can get apply to get a bus pass for free travel in England.</p>
+        <p><a href="">More on the free bus pass</a></p>
+        <h2 class="govuk-heading-m">Winter Fuel Payment</h2>
+      <p>Because you have reached State Pension age and you live on your own you can get a Winter Fuel Payment of
+     £200 every year.
+        </p>
+
+        <p><a href="">More on Winter Fuel Payment</a></p>
+        <h2 class="govuk-heading-m">Pension Credit </h2>
+        <p>Because you have reached State Pension age  and you live on your own you could get Pension Credit 
+       to top up your State Pension to £167.25 a week.
+          <p>
+         
+
+          <p>How much Pension Credit you get depends on:</p>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>your joint income being less than £167.25 a week</li>
+          <li>the amount in savings and property you have</li>
+          <li>if you have a disability</li>
+          <li>if you're a carer</li>
+          </ul>
+          <p>If you’re eligible, Pension Credit could also help you get other benefits too. For example, reduced Council Tax, Housing Benefit to help pay your rent and free prescriptions.</p>
+         <p>You have to claim Pension Credit. </p>
+   
+
+          <p><a href="">More on Pension Credit</a></p>
+          
+       
+        <p><a href="pension_age_start" class="govuk-button">Apply now</a></p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
