@@ -1,0 +1,200 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  What you'll get - Winter Fuel Payment
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Winter Fuel Payment
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+          <li
+          class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+          <a class="gem-c-contents-list__link" href="wf_overview"> Overview</a>
+      </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+              <a class="gem-c-contents-list__link" href="wf_overview">  Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+              <a class="gem-c-contents-list__link" href="wf_problem">Problems with payments, cancel payments or report a change</a>
+            </li>
+  
+   
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">What you'll get</h2>
+     
+         <p>How much you get depends on your circumstances during the qualifying week. The qualifying week for winter 2019 to 2020 is 16 to 22 September 2019.</p>
+     
+  
+  <p>Any money you get is tax-free and will not affect your other benefits.</p>
+ 
+  
+  <table class="govuk-table">
+    <thead  class="govuk-table__head">
+      <tr  class="govuk-table__row">
+        <th scope="col"  class="govuk-table__header">Circumstance</th>
+        <th scope="col"  class="govuk-table__header">Born between 23 September 1939 and 5 April 1954</th>
+        <th scope="col"  class="govuk-table__header">Born on or before 22 September 1939</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify and live alone (or none of the people you live with qualify)</td>
+        <td class="govuk-table__cell">£200</td>
+        <td class="govuk-table__cell">£300</td>
+      </tr>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify and live with someone under 80 who also qualifies</td>
+        <td class="govuk-table__cell">£100</td>
+        <td class="govuk-table__cell">£200</td>
+      </tr>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify and live with someone 80 or over who also qualifies</td>
+        <td class="govuk-table__cell">£100</td>
+        <td class="govuk-table__cell">£150</td>
+      </tr>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify, live in a care home and do not get certain benefits</td>
+        <td class="govuk-table__cell">£100</td>
+        <td class="govuk-table__cell">£150</td>
+      </tr>
+    </tbody>
+  </table>
+    
+  <h2 class="govuk-heading-m">If you get certain benefits</h2>
+  
+  <p>Your payment may be different if you or your partner get one of the following benefits:</p>
+  
+ 
+  <ul class="govuk-list govuk-list--bullet">
+      <li>Pension Credit</li>
+      <li>income-based Jobseeker’s Allowance (JSA)</li>
+      <li>income-related Employment and Support Allowance (ESA)</li>
+      <li>Income Support</li>
+  </ul>
+  
+  <table class="govuk-table">
+    <thead  class="govuk-table__head">
+      <tr  class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Circumstance</th>
+        <th scope="col" class="govuk-table__header">Born between 23 September 1939 and 5 April 1954</th>
+        <th scope="col" class="govuk-table__header">Born on or before 22 September 1939</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify, get one of the benefits and live alone (or none of the people you live with qualify)</td>
+        <td class="govuk-table__cell">£200</td>
+        <td class="govuk-table__cell">£300</td>
+      </tr>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify and live with someone who also gets one of the benefits</td>
+        <td class="govuk-table__cell">£200 - only one of you will get the payment</td>
+        <td class="govuk-table__cell">£300 - only one of you will get the payment</td>
+      </tr>
+      <tr  class="govuk-table__row">
+        <td class="govuk-table__cell">You qualify, live in a care home and get one of the benefits</td>
+        <td class="govuk-table__cell">Nil</td>
+        <td class="govuk-table__cell">Nil</td>
+      </tr>
+    </tbody>
+  </table>
+   
+  <h3 class="govuk-heading-s">How and when you are paid</h3>
+  
+  <p>You’ll get a letter telling you how much you will get, an estimated payment date and which account it will be paid into.</p>
+  
+  <p>Most payments are made automatically between November and December. </p>
+  <p>If the money is not paid into your account by 13 January 2020, find out what to do if you <a href=""> have a problem with your payment</a>. </p>
+  
+</p></p>
+ 
+  
+  <div class="pagination">
+    <a href="wf_what_youll_get" class="gem-c-pagination__link" rel="prev">
+       <span class="gem-c-pagination__link-title">
+         <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+           <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+         </svg>
+         <span class="gem-c-pagination__link-text">
+           Previous
+         </span>
+       </span>
+         <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+         <span class="gem-c-pagination__link-label">Eligibility</span>
+     </a>
+
+   </div>
+   <div class="pagination">
+       <a href="wf_problem" class="gem-c-pagination__link" rel="next">
+         <span class="gem-c-pagination__link-title">
+           <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+             <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+           </svg>
+           <span class="gem-c-pagination__link-text">
+             Next
+           </span>
+         </span>
+           <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+           <span class="gem-c-pagination__link-label">Problems with payments, cancel payments or report a change</span>
+       </a>
+   </div>
+  
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/wf_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}

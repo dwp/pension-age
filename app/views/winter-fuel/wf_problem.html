@@ -1,0 +1,113 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+Problems with payments, cancel payments or report a change - Winter Fuel Payment
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Winter Fuel Payment
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+          <li
+          class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+          <a class="gem-c-contents-list__link" href="wf_overview"> Overview</a>
+      </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="wf_overview">Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link"  href="wf_what_youll_get">What you'll get</a>
+          </li>
+          
+ 
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+              <a class="gem-c-contents-list__link">Problems with payments, cancel payments or report a change</a>
+            </li>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Problems with payments, cancel payments or report a change</h2>
+     
+    <p>If the money is not paid into your account by 13 January 2020, or if you think your payment is incorrect contact the Winter Fuel Payment Centre.</p>
+    <p>Report any change of circumstances as soon as possible, as these can affect how much Winter Fuel Payment you get. For example, if you stop getting a benefit, move house or go into care.</p>
+
+      <p>If you cancel your payments, you can change this at any time.</p>
+     <div class="contact">
+      <p><strong>Winter Fuel Payment Centre</strong>   <br>
+      Telephone: 0800 731 0160     <br>
+      Telephone from outside the UK: +44 (0)191 218 7777<br>
+      Textphone: 0800 731 0464  <br>
+      Textphone from outside the UK: +44 (0)191 218 7280<br>
+      <a href="http://ngts.org.uk/">NGT text relay</a> (if you cannot hear or speak on the phone): 18001 then 0800 731 0160<br>
+      Monday to Friday, 8am to 6pm  <br>
+      <a href="/call-charges">Find out about call charges</a></p>
+      </div>
+      
+      <div class="pagination">
+     <a href="wf_what_youll_get" class="gem-c-pagination__link" rel="prev">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Previous
+          </span>
+        </span>
+          <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+          <span class="gem-c-pagination__link-label">What you'll get</span>
+      </a>
+
+    </div>
+  
+        
+                          </div>
+                <div class="govuk-grid-column-one-third">
+                    {% include "includes/wf_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  SP date in future
+{% endblock %}
+
+{% set serviceName %}
+Find out what support you could get in retirement
+{% endset%}
+{% block beforeContent %}
+  <a class="govuk-back-link" href="pension_age_dob">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!--This page is if a user is more than 4 months away from their SP date-->
+     
+      <h1 class="govuk-heading-xl">
+          You reached State Pension age on 7 July 2019
+      </h1>
+      
+      
+   
+      <h2 class="govuk-heading-m">State Pension</h2>
+      <p> You can get your State Pension now if you haven't already claimed it.</p>
+      <p><a href="/get_start">Get your State Pension</a></p>
+        <h2 class="govuk-heading-l">What else you could get</h2>
+        <p>Because you've reached State Pension age, you may also be eligible for:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>Pension Credit - if you're on a low income, you may be able to get this</li>  
+            <li>reduced Council Tax</li>  
+            <li>Housing Benefit - to help you with your rent</li>            
+            <li>Winter Fuel Payment - to help with your heating bills</li>
+          <li>a bus pass - the age you can apply depends on
+            where you live in the UK</li>
+            <li>Attendance Allowance - if you have a disability and need care</li>
+            <li>Carer's Allowance - if you look after someone</li>
+           
+        </ul>
+   
+        <a class="govuk-button" href="pension_age_country">Check your eligibility</a>
+
+
+    </div>
+  </div>
+
+{% endblock %}

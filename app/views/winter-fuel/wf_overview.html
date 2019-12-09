@@ -1,0 +1,112 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+ Winter Fuel Payment
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Winter Fuel Payment
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+          <li
+          class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+          <a class="gem-c-contents-list__link"> Overview</a>
+      </li>
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link"">
+              <a class="gem-c-contents-list__link" href="wf_eligibility">  Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link"  href="wf_what_youll_get">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+              <a class="gem-c-contents-list__link" href="wf_problem">Problems with payments, cancel payments or report a change</a>
+            </li>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Overview</h2>
+     
+
+  
+  <p>If you were born on or before 5 April 1954 you could get between <a href="wf_what_youll_get.html">£100 and £300</a> to help you pay your heating bills. This is known as a ‘Winter Fuel Payment’.</p>
+  
+  <p>You usually get a Winter Fuel Payment automatically every year if you are eligible and you get the State Pension or another benefit, such as Pension Credit (but not Housing Benefit, Council Tax Reduction, Child Benefit or Universal Credit).</p>
+  
+  
+ 
+  <p>You’ll get a letter telling you how much you will get and an estimated payment date.</p>
+  <p>Most payments are made automatically between November and December. You should get your money by 13 January 2020.</p>
+  
+  <p>Find out what to do if you <a href="wf_problem">don't get paid automatically or have a problem with your payment</a>. </p>
+  
+  
+  <p>Any money you get will not affect your other benefits.</p>
+  
+  
+   <div class="pagination">
+       <a href="wf_eligibility" class="gem-c-pagination__link" rel="next">
+         <span class="gem-c-pagination__link-title">
+           <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+             <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+           </svg>
+           <span class="gem-c-pagination__link-text">
+             Next
+           </span>
+         </span>
+           <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+           <span class="gem-c-pagination__link-label">Eligibility</span>
+       </a>
+   </div>
+   </div>
+                <div class="govuk-grid-column-one-third">
+
+                  {% include "includes/wf_related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}
