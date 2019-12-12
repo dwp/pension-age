@@ -238,6 +238,19 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
     }
   })
 
+  router.post('/eligibility5/pension_age_live', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let partner = req.session.data['partner']
+    
+    if (partner === 'partner-no') {
+      res.redirect('/eligibility5/pension_age_wf')
+    } else {
+      res.redirect('/eligibility5/pension_age_live')
+    }
+  })
 
   router.post('/eligibility5/pension_age_partner_over', function (req, res) {
     // Get the answer from session data
@@ -283,6 +296,22 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
     }
   })
   
+
+  // address look up
+
+  router.post('/address_look_up/complete', function (req, res) {
+    // Get the answer from session data
+    // The name between the quotes is the same as the 'name' attribute on the input elements
+    // However in JavaScript we can't use hyphens in variable names
+  
+    let address = req.session.data['address-confirmation']
+  
+    if (address === 'no') {
+      res.redirect('/address_look_up/enter_address')
+    } else {
+      res.redirect('/address_look_up/complete')
+    }
+  })
   
 
 // Add your routes here - above the module.exports line

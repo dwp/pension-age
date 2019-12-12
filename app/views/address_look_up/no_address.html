@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+  Find your address
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="search1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+    
+
+            <form class="form" action="search1" method="post">
+      
+              <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Select your address
+                      </h1>
+                      <p class="govuk-!-margin-top-4"><b>No addresses found for '52' and 'NE25 1XX'</b> &nbsp;&nbsp;&nbsp;<a href="search1">Change</a></p>
+                    </legend>
+                  <p><a href="enter_address">Enter your address manually</a></p>
+                    </div>
+                  </fieldset>
+                </div>
+      
+        
+      
+          </form>
+
+    </div>
+  </div>
+
+{% endblock %}

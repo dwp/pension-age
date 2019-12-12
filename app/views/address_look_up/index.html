@@ -1,0 +1,49 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  Find your address (prototype)
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+       Address look up
+      </h1>
+
+     <h2 class="govuk-heading-l">House name and postcode search</h2>
+     <h3 class="govuk-heading-m">Results as radio buttons</h3>
+<p><a href="search1">Start</a></p>
+      </p>
+      <p><a href="search_errors">Errors</a></p>
+      </p>
+      <p><a href="no_address">Address not found</a></p>
+      </p>
+      <h3 class="govuk-heading-m">Text link for address not listed</h3>
+      <p><a href="search2">Start</a></p>
+            </p>
+      
+      
+     
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+    
+
+    </div>
+  </div>
+{% endblock %}
