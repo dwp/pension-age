@@ -1,17 +1,17 @@
-  {% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  Find your address (prototype)
+  Question page
 {% endblock %}
 
+{% set serviceName %}
+  Find your address
+{% endset%}
 
-{% block header %}
-  <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
-{% endblock %}
 
 {% block beforeContent %}
-  
+
+
 {% endblock %}
 
 {% block content %}
@@ -21,18 +21,36 @@
       <h1 class="govuk-heading-xl">
        Address look up
       </h1>
+      <div class="example2">
+        <div class="grid-row">
+    
+    <h2 class="govuk-heading-m">House name and postcode search</h2>
+    
 
-     <h2 class="govuk-heading-l">House name and postcode search</h2>
-     <h3 class="govuk-heading-m">Results as radio buttons</h3>
+    <p><span class="app-c-tag app-c-tag--danger">Experimental</span>
+    </p>
+     
+     <h3 class="govuk-heading-s">Results as radio buttons</h3>
+     <p>Used in Apply for a Budgeting Loan</p>
 <p><a href="/address_look_up/search1">Start</a></p>
       </p>
-      <p><a href="/address_look_up/search_errors">Errors</a></p>
-      </p>
+      <p><a href="/address_look_up/search_errors">Search validation</a></p>
+      
+      <h3 class="govuk-heading-s">Address not found</h3>
       <p><a href="/address_look_up/no_address">Address not found</a></p>
       </p>
-      <h3 class="govuk-heading-m">Text link for address not listed</h3>
+      <h3 class="govuk-heading-s">Text links for address not listed and change search</h3>
+      <p>Used in Buy for a rod fishing licence</p>
       <p><a href="/address_look_up/search2">Start</a></p>
+    
             </p>
+            <p><a href="/address_look_up/select_address2_errors">Select address validation</a></p>
+            <p><a href="/address_look_up/select_address2_long">Long address list</a></p>
+
+            <h3 class="govuk-heading-s">Address not found goes straight to manual entry</h3>
+      <p>Used in Buy for a rod fishing licence</p>
+            <p><a href="/address_look_up/no_address2">Address not found</a></p>
+      </p>
       
       
      
