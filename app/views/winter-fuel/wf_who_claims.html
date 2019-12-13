@@ -1,0 +1,180 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Who needs to make a claim? - Winter Fuel Payment
+{% endblock %}
+
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Winter Fuel Payment
+    </h1>
+    <aside class="part-navigation-container" role="complementary">
+          <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+      <h2 class="gem-c-contents-list__title">Contents</h2>
+
+    <ol class="gem-c-contents-list__list">
+        <li
+        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+        <a class="gem-c-contents-list__link" href="wf_overview"> Overview</a>
+    </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+            <a class="gem-c-contents-list__link" href="wf_overview">  Eligibility</a>
+                </li>
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+          <a class="gem-c-contents-list__link" href="wf_what_youll_get">What you’ll get if you qualify</a>
+        </li>
+
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+          <a class="gem-c-contents-list__link">Who needs to make a claim?</a>
+        </li>
+
+        <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="wf_problem">Report a change or cancel your payment</a>
+          </li>
+
+
+    </ol>
+  </nav>
+
+      </aside>
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+
+</div>
+<div class="govuk-grid-column-two-thirds">
+  <h2 class="govuk-heading-l">Who needs to make a claim?</h2>
+
+       <p>Unless you’ve deferred your State Pension, you only need to make a claim
+         if you’ve not had a Winter Fuel Payment before and:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>you do not get benefits or a State Pension</li>
+        <li>you only get Universal Credit, Housing Benefit, Council Tax Reduction or Child Benefit</li>
+        <li>you get benefits or a State Pension, but live in Switzerland or an eligible
+           <a href="https://www.gov.uk/eu-eea">EEA country</a></li>
+      </ul>
+
+         <p>If you’ve deferred your State Pension, you’ll need to claim your Winter Fuel
+           Payment even if you had it before. You would only need to do this once</p>
+
+<h2 class="govuk-heading-m">If you need to claim</h2>
+
+<p>If you’ve had a Winter Fuel Payment before, you should not need to claim it again.
+  It’ll be paid automatically. Those who do need to claim can do it by phone or by post.</p>
+
+<h3 class="govuk-heading-s">Call the Winter Fuel Payment Centre</h3>
+
+<p>Telephone: 0800 731 0160<br>
+  Telephone from outside the UK: +44 (0)191 218 7777<br>
+  Textphone: 0800 731 0464<br>
+  Textphone from outside the UK: +44 (0)191 218 7280<br>
+  <a href="http://ngts.org.uk/">NGT text relay</a> (if you cannot hear or speak on the phone):
+  18001 then 0800 731 0160<br>
+  Monday to Friday, 8am to 6pm<br>
+  <a href="/call-charges">Find out about call charges</a>.
+</p>
+
+<p>You’ll be asked for:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li>your National Insurance number</li>
+    <li>your bank or building society details</li>
+    <li>your BIC and IBAN numbers if you live in Switzerland or an eligible EEA country</li>
+    <li>the date you were married or entered into a civil partnership (if appropriate)</li>
+</ul>
+
+<div class="govuk-inset-text">
+    <p>Payments cannot be made into a National Savings and Investments (NS&I) account,
+      unless you already get other benefits paid into that account.</p>
+</div>
+
+<p>You’ll also need to say whether, during the qualifying week of 16 to 22 September
+  2019, you were:</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+      <li>in hospital getting free in-patient treatment</li>
+      <li>in a residential care home or Ilford Park Resettlement Home</li>
+      <li>in prison</li>
+  </ul>
+
+<h3 class="govuk-heading-s">Post a claim form</h3>
+
+<p>The claim form you need depends on where you live.</p>
+
+<p><a href="/government/publications/winter-fuel-payment-claim-form">Winter Fuel Payment
+   claim form if you live in the UK</a><br>
+<a href="/government/publications/winter-fuel-payment-claim-form-eea-and-switzerland">Winter Fuel
+  Payment claim form if you live in Switzerland or an eligible EEA country</a></p>
+
+<h3 class="govuk-heading-s">Email enquiries</h3>
+
+<p>You can also <a href="https://secure.dwp.gov.uk/contact-winter-fuel-payments-centre/contact-form">use
+  an online form to contact the Winter Fuel Payment Centre</a>.</p>
+
+<div class="pagination">
+  <a href="wf_what_youll_get" class="gem-c-pagination__link" rel="prev">
+     <span class="gem-c-pagination__link-title">
+       <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+         <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+       </svg>
+       <span class="gem-c-pagination__link-text">
+         Previous
+       </span>
+     </span>
+       <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+       <span class="gem-c-pagination__link-label">What you’ll get if you qualify</span>
+   </a>
+
+ </div>
+ <div class="pagination">
+     <a href="wf_problem" class="gem-c-pagination__link" rel="next">
+       <span class="gem-c-pagination__link-title">
+         <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+           <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+         </svg>
+         <span class="gem-c-pagination__link-text">
+           Next
+         </span>
+       </span>
+         <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+         <span class="gem-c-pagination__link-label">Report a change or cancel your payment</span>
+     </a>
+ </div>
+
+ </div>
+              <div class="govuk-grid-column-one-third">
+
+                {% include "includes/wf_related_links.html" %}
+  </div>
+
+  </div>
+  {% include "includes/sp_topic.html" %}
+{% endblock %}
