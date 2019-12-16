@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+  Find your address
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="search1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+    
+
+            <form class="form" action="/address_look_up/search1" method="post">
+      
+              <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        No results found
+                      </h1>
+                             </legend>
+                             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                <div class="govuk-summary-list__row">
+                                  <dt class="govuk-summary-list__key">
+                                    Name or number
+                                  </dt>
+                                  <dd class="govuk-summary-list__value">
+                                    62
+                                  </dd>
+                                  <dd class="govuk-summary-list__actions">
+                                    <a href="#">
+                                      Change
+                                      <span class="govuk-visually-hidden"> name</span>
+                                    </a>
+                                  </dd>
+                                </div>
+                                <div class="govuk-summary-list__row">
+                                  <dt class="govuk-summary-list__key">
+                                    Postcode1
+                                  </dt>
+                                  <dd class="govuk-summary-list__value">
+                                    NE25 9NZ
+                                  </dd>
+                                  <dd class="govuk-summary-list__actions">
+                                    <a href="#">
+                                      Change
+                                      <span class="govuk-visually-hidden"> date of birth</span>
+                                    </a>
+                                  </dd>
+                                </div>
+                                </dl>
+                  <p>If you're sure the information you gave is correct, then you can <a href="/address_look_up/enter_address">enter your address manually</a>.</p>
+                    </div>
+                  </fieldset>
+                </div>
+      
+        
+      
+          </form>
+
+    </div>
+  </div>
+
+{% endblock %}
