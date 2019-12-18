@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Add new user - {{serviceName}}
+{% endblock %}
+
+{% block header %}
+    {{ super() }}
+{% endblock %}
+
+{% block beforeContent %}
+ 
+{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            {% set errorSummaryMessage %}
+                We have not found an organisation with this name. Check the name has been entered correctly, view organisations to look for the user’s employer or add a new organisation.
+            {% endset %}
+
+            {% if data['org-error'] %}
+                {{ govukErrorSummary({
+                    titleText: "There is a problem",
+                    errorList: [
+                        {
+                            text: errorSummaryMessage,
+                            href: "#organisation-name"
+                        }
+                    ]
+                }) }}
+            {% endif %}
+
+            <form action="user-add-org-check" method="post" class="form">
+                <fieldset class="govuk-fieldset"{% if data['org-error'] %} aria-describedby="organisation-error-message"{% endif %}>
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                            <span class="govuk-caption-l">Add a user</span>What organisation is the user employed by?
+                        </h1>
+                    </legend>
+
+                    <div class="govuk-form-group{% if data['org-error'] %} govuk-form-group--error{% endif %}">
+                        {% if data['org-error'] %}
+                            <span id="organisation-error-message" class="govuk-error-message">
+                                <span class="govuk-visually-hidden">Error:</span> {{ errorSummaryMessage }}
+                            </span>
+                            {% endif %}
+
+                        <label class="govuk-label govuk-visually-hidden" for="organisation-name">
+                            Organisation
+                        </label>
+
+                        <select class="govuk-select form-control" name="organisation-name" id="organisation-name">
+                            <option value="" selected>Choose an organisation</option>
+                            <option value="Capita">Capita</option>
+                            <option value="Serco">Serco</option>
+                            <option value="Remploy">Remploy</option>
+                            <option value="G4S">G4S</option>
+                            <option value="London Borough of Croydon Council">London Borough of Croydon Council</option>
+                            <option value="{{ data['organisation-name'] }}">{{ data['organisation-name'] }}</option>
+                        </select>
+                    </div>
+
+                   <button class="govuk-button" value="Continue">Continue</button>
+                </fieldset>
+            </form>
+
+            <p class="govuk-!-margin-top-6">
+                <a href="/mvp1/organisation-add-prap" class="govuk-link">
+                    Add an organisation
+                </a><br>
+
+                <a href="/mvp1/organisation-list-prap" class="govuk-link">
+                    View all organisations
+                </a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block pageScripts %}
+<link rel="stylesheet" href="/public/javascripts/accessible-autocomplete.min.css">
+<script type="text/javascript" src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script type="text/javascript">
+    accessibleAutocomplete.enhanceSelectElement({
+        defaultValue: '',
+        selectElement: document.getElementById('organisation-name'),
+        minLength: 3,
+        tNoResults: function() { return 'No organisations found.'; }
+    });
+</script>
+{% endblock %}

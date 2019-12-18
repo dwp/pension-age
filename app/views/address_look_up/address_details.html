@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+  Find your address
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="search1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+    
+
+            <form class="form" action="/address_look_up/search1" method="post">
+      
+              <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                        Address details
+                      </h1>
+                             </legend>
+                             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                <div class="govuk-summary-list__row">
+                                  <dt class="govuk-summary-list__key">
+                                    Address
+                                  </dt>
+                                  <dd class="govuk-summary-list__value">
+                                    62 Turnberry<br>
+                                    Whitley Bay<br>
+                                    Tyne and Wear<br>
+                                    NE25 9NZ
+                                  </dd>
+                                  <dd class="govuk-summary-list__actions">
+                                   &nbsp;
+                                  </dd>
+                                </div>
+                                <div class="govuk-summary-list__row">
+                                  <dt class="govuk-summary-list__key">
+                                    Country
+                                  </dt>
+                                  <dd class="govuk-summary-list__value">
+                                    England
+                                  </dd>
+                                  <dd class="govuk-summary-list__actions">
+                                  &nbsp;
+                                    </a>
+                                  </dd>
+                                </div>
+                                <div class="govuk-summary-list__row">
+                                    <dt class="govuk-summary-list__key">
+                                     Local authority
+                                    </dt>
+                                    <dd class="govuk-summary-list__value">
+                                      North Tyneside
+                                    </dd>
+                                    <dd class="govuk-summary-list__actions">
+                                    &nbsp;
+                                      </a>
+                                    </dd>
+                                  </div>
+                                  <div class="govuk-summary-list__row">
+                                    <dt class="govuk-summary-list__key">
+                                     Building status
+                                    </dt>
+                                    <dd class="govuk-summary-list__value">
+                                      Occupied
+                                    </dd>
+                                    <dd class="govuk-summary-list__actions">
+                                    &nbsp;
+                                      </a>
+                                    </dd>
+                                  </div>
+                                  <div class="govuk-summary-list__row">
+                                    <dt class="govuk-summary-list__key">
+                                     Building type
+                                    </dt>
+                                    <dd class="govuk-summary-list__value">
+                                      Residential, Dwelling, Self contained flat
+                                    </dd>
+                                    <dd class="govuk-summary-list__actions">
+                                    &nbsp;
+                                      </a>
+                                    </dd>
+                                  </div>
+                                </dl>
+                    </div>
+                  </fieldset>
+                </div>
+      
+        
+      
+          </form>
+
+    </div>
+  </div>
+
+{% endblock %}
