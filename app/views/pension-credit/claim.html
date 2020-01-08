@@ -1,0 +1,128 @@
+  {% extends "layout.html" %}
+
+{% block pageTitle %}
+  How to Claim - Pension Credit
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Pension Credit
+      </h1>
+      <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+        <h2 class="gem-c-contents-list__title">Contents</h2>
+  
+      <ol class="gem-c-contents-list__list">
+            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link" href="overview">Eligibility</a>
+                  </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link"  href="what_youll_get">What you'll get</a>
+          </li>
+          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link">How to claim</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                <a class="gem-c-contents-list__link"  href="calc">How it's calculated</a>
+              </li>
+          
+              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                <a class="gem-c-contents-list__link"  href="inherit">Inheriting or increasing State Pension from a spouse or civil partner</a>
+              </li>
+          
+          
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                    <a class="gem-c-contents-list__link"  href="living">Living and working overseas
+                    </a>
+      </ol>
+    </nav>
+  
+        </aside>
+    
+      
+   
+
+      
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+     
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h2 class="govuk-heading-l">How to claim</h2>
+     <p>You'll not get your State Pension automatically - you have to claim it. You should get a letter no later than 2 months before you reach <a href="/pension_age_start">State Pension age</a> telling you what to do.</p>
+      <p>If you have not received an invitation letter, but you are within 4 months of reaching your State Pension age you can still make a claim.</p>
+      <p> Make a claim to <a href="../get_start">get your State Pension now</a>. </p>
+      <h2 class="govuk-heading-m">If you want to keep working</h2>
+     <p>You can claim your State Pension even if you carry on working, or you can <a href="">choose to delay your State Pension</a>, which could increase how much you get.</p>
+     <h2 class="govuk-heading-m">Claiming an Isle of Man pension</h2>
+     <p>If you’re eligible for a state pension from the Isle of Man, you’ll need to claim it separately from your UK State Pension.</p>
+      <p> Find out <a href="https://www.gov.im/categories/benefits-and-financial-support/social-security-benefits/retirement-pension">if you’re eligible and how to claim your Isle of Man pension</a>. </p>
+     
+     <p>You’ll get one payment for your UK State Pension and a separate payment for your Isle of Man pension.</p>
+    <div class="pagination">
+     <a href="what_youll_get" class="gem-c-pagination__link" rel="prev">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Previous
+          </span>
+        </span>
+          <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+          <span class="gem-c-pagination__link-label">What you'll get</span>
+      </a>
+
+    </div>
+    <div class="pagination">
+        <a href="calc" class="gem-c-pagination__link" rel="next">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Next
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">How it's calculated</span>
+        </a>
+    </div>
+        
+                          </div>
+                <div class="govuk-grid-column-one-third">
+                    {% include "includes/related_links.html" %}
+    </div>
+
+    </div>
+    {% include "includes/sp_topic.html" %}
+{% endblock %}
