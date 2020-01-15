@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+  Find your address
+{% endset%}
+
+{% block beforeContent %}
+  
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+      <form class="form" action="/address_look_up/select_address" method="post">
+
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-heading-xl">
+              Find your address
+            </h1>
+          </legend>
+          
+        
+          <div class="govuk-form-group govuk-form-group--error">
+            <label  class="govuk-label" for="address-number">
+              Property number or name
+            </label>
+            <span id="address-postcode-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Enter a property number or name
+              </span>
+            <input class="govuk-input govuk-input--width-10" id="address-number" name="address-number" type="text">
+          </div>
+        
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label" for="address-postcode">
+              Postcode
+            </label>
+            <span id="address-postcode-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Enter a real postcode
+              </span>
+            <input class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text">
+          </div>
+        
+        </fieldset>
+
+        <button class="govuk-button">Find address</button>
+        <p><a href="/address_look_up/enter_address">Enter your address manually</a></p>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

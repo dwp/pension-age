@@ -205,6 +205,26 @@ router.post('/eligibility/pension_age_couple', function (req, res) {
       }
     })
 
+    router.post('/eligibility4/pension_age_summary_over', function (req, res) {
+      // Get the answer from session data
+      // The name between the quotes is the same as the 'name' attribute on the input elements
+      // However in JavaScript we can't use hyphens in variable names
+    
+      let partner = req.session.data['partner']
+    
+      if (partner === 'partner-no') {
+        res.redirect('/eligibility4/pension_age_wf_over')
+      } 
+      
+      else if (partner === 'partner-live') {
+        res.redirect('/eligibility4/pension_age_summary_single_over')
+      }
+      
+      else {
+        res.redirect('/eligibility4/pension_age_summary_over')
+      }
+    })
+
 
 
   router.post('/eligibility4/pension_age_country_over', function (req, res) {
