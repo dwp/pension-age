@@ -16,6 +16,18 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#address">Select your correct address</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <h1 class="govuk-heading-xl">
         Select your address
@@ -28,7 +40,7 @@
               <div class="govuk-form-group govuk-form-group--error">
                   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                  
+                      <a name="address"></a>
                       <p class="govuk-!-margin-top-4">1 address found for <b>62</b> and <b>NE25 9NZ</b> &nbsp;&nbsp;&nbsp;<a href="search_pattern">Change</a></p>
                     </legend>
                     <span id="changed-name-error" class="govuk-error-message">
