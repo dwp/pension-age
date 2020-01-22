@@ -1,136 +1,148 @@
-  {% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  How to Claim - Pension Credit
+How to Claim - Pension Credit
 {% endblock %}
 
 
 {% block header %}
-  <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
-    </ol>
-  </div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        Pension Credit
-      </h1>
-      <aside class="part-navigation-container" role="complementary">
-            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+    <h1 class="govuk-heading-xl">
+      Pension Credit
+    </h1>
+    <aside class="part-navigation-container" role="complementary">
+      <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
         <h2 class="gem-c-contents-list__title">Contents</h2>
-  
-      <ol class="gem-c-contents-list__list">
-            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-                    <a class="gem-c-contents-list__link" href="overview">Overview</a>
-                  </li>
-                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-                    <a class="gem-c-contents-list__link"  href="eligibility">Eligibility</a>
-                  </li>
-              
+
+        <ol class="gem-c-contents-list__list">
           <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-            <a class="gem-c-contents-list__link"  href="what_youll_get">What you'll get</a>
+            <a class="gem-c-contents-list__link" href="overview">Overview</a>
           </li>
-          
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="eligibility">Eligibility</a>
+          </li>
+
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="what_youll_get">What you'll get</a>
+          </li>
+
           <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
             <a class="gem-c-contents-list__link">How to claim</a>
           </li>
-        
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-                <a class="gem-c-contents-list__link"  href="report">Report a change of circumstances</a>
-              </li>
-      </ol>
-    </nav>
-  
-        </aside>
-    
-      
-   
 
-      
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="report">Report a change of circumstances</a>
+          </li>
+        </ol>
+      </nav>
 
-    </div>
+    </aside>
 
-    <div class="govuk-grid-column-one-third">
 
-     
+
+
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+
   </div>
   <div class="govuk-grid-column-two-thirds">
-    
+
     <h2 class="govuk-heading-l">How to claim</h2>
-     <p>The quickest way to apply for Pension Credit is by phone.</p>
-     <div class="govuk-inset-text"><p>A friend or family member can call for you - you must be with them when they call.</p>
-     </div> 
-      <div class="govuk-inset-text"">
+    <p>The quickest way to apply for Pension Credit is by phone.</p>
+    <div class="govuk-inset-text">
+      <p>A friend or family member can call for you - you must be with them when they call.</p>
+    </div>
+    <div class="govuk-inset-text"">
         <p><strong>Pension Credit claim line</strong><br>
         Telephone: 0800 99 1234<br>
         Textphone: 0800 169 0133<br>
-        <a href="http://ngts.org.uk/"><abbr title="Next Generation Text">NGT</abbr> text relay</a> (if you cannot hear or speak on the phone): 18001 then 0800 99 1234  <br>
-        Monday to Friday, 8am to 7:30pm<br>
-        <a href="/call-charges">Find out about call charges</a></p>
-        </div>
-      <p>You can use a paper application if you’re unable to make a claim by phone. Contact a voluntary organisation (for example <a href="">Citizens Advice</a> or  <a href="">AgeUK</a>) in your area - or get a friend or family member to call the helpline to ask for a paper application.</p>
-      <h2 class="govuk-heading-m">What you need to claim</h2>
-     <p>You will need:</p>
-     <ul class="govuk-list govuk-list--bullet">
+        <a href=" http://ngts.org.uk/"> <abbr title="Next Generation Text">NGT</abbr> text relay</a> (if you cannot
+      hear or speak on the phone): 18001 then 0800 99 1234 <br>
+      Monday to Friday, 8am to 7:30pm<br>
+      <a href="/call-charges">Find out about call charges</a></p>
+    </div>
+    <p>You can use a paper application if you’re unable to make a claim by phone. Contact a voluntary organisation (for
+      example <a href="https://www.citizensadvice.org.uk/">Citizens Advice</a> or <a
+        href="https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/pension-credit/">AgeUK</a>)
+      in your area - or get a friend or family member to call the helpline to ask for a paper application.</p>
+    <h2 class="govuk-heading-m">What you need to claim</h2>
+    <p>You will need:</p>
+    <ul class="govuk-list govuk-list--bullet">
       <li>your National Insurance number</li>
       <li>information about your income, savings and investments</li>
       <li>your bank account details</li>
     </ul>
-    <p>The earliest you can start your application is 4 months before you reach <a href="">State Pension age</a>.</p>
-     <h2 class="govuk-heading-m">If you disagree with a decision</h2>
-     <p>You can <a href="">challenge a decision</a> about your claim. This is called asking for mandatory reconsideration.</p>
+    <p>The earliest you can start your application is 4 months before you reach <a href="/eligibility/pension_age_start">State Pension age</a>.</p>
+    <h2 class="govuk-heading-m">If you disagree with a decision</h2>
+    <p>You can <a href="https://www.gov.uk/mandatory-reconsideration">challenge a decision</a> about your claim. This is called asking for mandatory
+      reconsideration.</p>
     <div class="pagination">
-     <a href="what_youll_get" class="gem-c-pagination__link" rel="prev">
+      <a href="what_youll_get" class="gem-c-pagination__link" rel="prev">
         <span class="gem-c-pagination__link-title">
-          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-            <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+            viewBox="0 0 17 13">
+            <path fill="currentColor"
+              d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+            </path>
           </svg>
           <span class="gem-c-pagination__link-text">
             Previous
           </span>
         </span>
-          <span class="gem-c-pagination__link-divider visually-hidden">:</span>
-          <span class="gem-c-pagination__link-label">What you'll get</span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">What you'll get</span>
       </a>
 
     </div>
     <div class="pagination">
-        <a href="eligibility" class="gem-c-pagination__link" rel="next">
-          <span class="gem-c-pagination__link-title">
-            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-              <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
-            </svg>
-            <span class="gem-c-pagination__link-text">
-              Next
-            </span>
+      <a href="eligibility" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+            viewBox="0 0 17 13">
+            <path fill="currentColor"
+              d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
+            </path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Next
           </span>
-            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
-            <span class="gem-c-pagination__link-label">Eligibility</span>
-        </a>
-    </div>
-        
-                          </div>
-                <div class="govuk-grid-column-one-third">
-                    {% include "includes/related_links.html" %}
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Eligibility</span>
+      </a>
     </div>
 
-    </div>
-    {% include "includes/sp_topic.html" %}
+  </div>
+  <div class="govuk-grid-column-one-third">
+    {% include "includes/related_links.html" %}
+  </div>
+
+</div>
+{% include "includes/sp_topic.html" %}
 {% endblock %}

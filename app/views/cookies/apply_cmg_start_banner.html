@@ -1,0 +1,146 @@
+
+  {% extends "layout2.html" %}
+
+
+{% block pageTitle %}
+Apply for help arranging child maintenance
+{% endblock %}
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Births, deaths, marriages and care</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Having a child, parenting and adoption</a>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Apply for help arranging child maintenance</h1>
+
+      <p class="govuk-body-l">Use the Child Maintenance Service to set up a child
+        maintenance arrangement if you and the other parent cannot agree to
+        one yourselves.</p>
+
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p class="govuk-body">You’ll need:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your unique reference number – this is in the email you were sent
+          after speaking to Child Maintenance Options</li>
+        <li>your <a class="govuk-link" href="https://www.gov.uk/lost-national-insurance-number">National Insurance number</a></li>
+        <li>details of the children you’re applying for</li>
+        <li>the other parent's name and as much other information about them as you can give –
+          for example, where they live or their phone number</li>
+        <li>your bank or building society account details, if you need us to give them to the other parent</li>
+      </ul>
+
+      <p>You can also speak to your bank or building society about
+      <a class="govuk-link" href="https://www.gov.uk/making-child-maintenance-arrangement/using-child-maintenance-service">setting up an account</a> that will not give away your location.</p>
+
+      <h3 class="govuk-heading-s">Fees</h3>
+
+      <p>The application fee is £20. You’ll need a debit or credit card to pay this.</p>
+
+        <p>You will not have to pay the application fee if you:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>have experienced domestic abuse – if you have, you should
+            <a class="govuk-link" href="https://www.gov.uk/report-domestic-abuse">tell someone about it</a></li>
+          <li>are under 19 years old</li>
+        </ul>
+
+        <h3 class="govuk-heading-s">If you’re worried about contacting the other parent</h3>
+
+        <p>We will try to contact the other parent about setting up child maintenance – you do not need to.</p>
+
+        <p>If we cannot contact the other parent, we might not be able to set up an arrangement.</p>
+
+        <div class="govuk-inset-text">We will not share your answers with the other parent.</div>
+
+
+        <a href="eligibility_questions/introduction" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+        Start now
+        </a>
+
+
+      <h2 class="govuk-heading-m">When you cannot apply online</h2>
+
+      <p class="govuk-body">You should call us if:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>you need child maintenance for more than 4 children</li>
+        <li>you need child maintenance from more than one parent</li>
+        <li>the children you are applying for are not registered for Child Benefit</li>
+      </ul>
+
+      <p class="govuk-body"><strong>Child Maintenance Service</strong><br>
+        Telephone: 0800 171 2345 <br>
+
+        </p><p class="govuk-body">Monday to Friday, 8am to 7:30pm (excluding bank holidays) <br>
+          Saturday, 9am to 4pm<br>
+            <a href="/call-charges">Find out about call charges</a></p>
+
+
+                  <!-- Before you start section -->
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Manage your Child Maintenance Service case
+              </a>
+            </li>
+          
+            <li>
+              <a href="#" class="govuk-!-font-size-16">
+                State Pension age review<span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#global-cookie-message").hide();
+  });
+  $("#show").click(function(){
+    $("#cookie-confirm").show();
+    $("#cookie-message").hide();
+  });
+});
+</script>
+
+
+{% endblock %}

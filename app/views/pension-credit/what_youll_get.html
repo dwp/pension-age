@@ -1,79 +1,79 @@
-  {% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  What you'll get - Pension Credit
+What you'll get - Pension Credit
 {% endblock %}
 
 
 {% block header %}
-  <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
-    </ol>
-  </div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        Pension Credit
-      </h1>
-      <aside class="part-navigation-container" role="complementary">
-            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
+    <h1 class="govuk-heading-xl">
+      Pension Credit
+    </h1>
+    <aside class="part-navigation-container" role="complementary">
+      <nav role="navigation" class="gem-c-contents-list  " data-module="track-click" aria-label="Pages in this guide">
         <h2 class="gem-c-contents-list__title">Contents</h2>
-  
-      <ol class="gem-c-contents-list__list">
-            <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
-              <a class="gem-c-contents-list__link" href="overview">  Overview</a>
-                  </li>
-                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-                    <a class="gem-c-contents-list__link" href="eligibility">Eligibility</a>
-                  </li>
-          
+
+        <ol class="gem-c-contents-list__list">
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__link">
+            <a class="gem-c-contents-list__link" href="overview"> Overview</a>
+          </li>
+          <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+            <a class="gem-c-contents-list__link" href="eligibility">Eligibility</a>
+          </li>
+
           <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
             <a class="gem-c-contents-list__link">What you'll get</a>
           </li>
-          
+
           <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
             <a class="gem-c-contents-list__link" href="claim">How to claim</a>
           </li>
-         
+
           <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
-            <a class="gem-c-contents-list__link"  href="report">Report a change of circumstances</a>
+            <a class="gem-c-contents-list__link" href="report">Report a change of circumstances</a>
           </li>
-      
-      
-            
-      </ol>
-      </ol>
-    </nav>
-  
-        </aside>
-    
-      
-   
 
-      
 
-    </div>
 
-    <div class="govuk-grid-column-one-third">
+        </ol>
+        </ol>
+      </nav>
 
-     
+    </aside>
+
+
+
+
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+
   </div>
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l">What you'll get</h2>
@@ -98,79 +98,92 @@
         </tr>
       </tbody>
     </table>
-    <p> 
-      You might get more if you’re a carer, severely disabled, responsible for a child or young person, or have certain housing costs.</p>
-         <p>Use the <a href="">Pension Credit calculator</a> to work out how much you might get.</p>
-        <p> You might be eligible for other benefits when you get Pension Credit - <a hre="">check a benefits calculator</a>.</p>
-     
-  
- 
-  <h2 class="govuk-heading-m">If you’re responsible for a child or young person</h2>
-  
-  <p>You might get more Pension Credit if you’re responsible for a child or young person. This is called the ‘child addition’.</p>  
-  <p>The child or young person must normally live with you and be under the age of 20.</p>
-  
- 
-  <p>If they’re 16 or over and under 20, they must be in (or accepted for):</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>approved training, such as Foundation Apprenticeships</li>
-    <li>a course of non-advanced education (for example, they’re studying for GCSEs or A levels)</li>
+    <p>
+      You might get more if you’re a carer, severely disabled, responsible for a child or young person, or have certain
+      housing costs.</p>
+    <p>Use the <a href="https://www.gov.uk/pension-credit-calculator">Pension Credit calculator</a> to work out how much
+      you might get.</p>
+    <p> You might be eligible for other benefits when you get Pension Credit - <a
+        hre="https://www.gov.uk/benefits-calculators">check a benefits calculator</a>.</p>
+
+
+
+    <h2 class="govuk-heading-m">If you’re responsible for a child or young person</h2>
+
+    <p>You might get more Pension Credit if you’re responsible for a child or young person. This is called the ‘child
+      addition’.</p>
+    <p>The child or young person must normally live with you and be under the age of 20.</p>
+
+
+    <p>If they’re 16 or over and under 20, they must be in (or accepted for):</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>approved training, such as Foundation Apprenticeships</li>
+      <li>a course of non-advanced education (for example, they’re studying for GCSEs or A levels)</li>
     </ul>
-  
+
     <p>If they’re in education, it must be for more than 12 hours a week on average.</p>
     <p>You cannot get the child addition if you get Tax Credits.</p>
-    <div class="govuk-inset-text"><p>If you get Tax Credits, you could get support for the child or young person through <a href="https://www.gov.uk/child-tax-credit"> Child Tax Credits</a>.</p>
+    <div class="govuk-inset-text">
+      <p>If you get Tax Credits, you could get support for the child or young person through <a
+          href="https://www.gov.uk/child-tax-credit"> Child Tax Credits</a>.</p>
     </div>
     <p>Contact the Pension Service helpline if you’re not sure whether you’re eligible for the child addition.</p>
-<div class="govuk-inset-text">
-  <p><strong>Pension Service helpline</strong><br>
-  Telephone: 0800 731 0469<br>
-  Textphone: 0800 169 0133<br>
-  NGT text relay (if you cannot hear or speak on the phone): 18001 then 0800 731 0469<br>
-  Monday to Friday, 8am to 6pm<br>
-  <a href="/call-charges">Find out about call charges</a></p>
+    <div class="govuk-inset-text">
+      <p><strong>Pension Service helpline</strong><br>
+        Telephone: 0800 731 0469<br>
+        Textphone: 0800 169 0133<br>
+        NGT text relay (if you cannot hear or speak on the phone): 18001 then 0800 731 0469<br>
+        Monday to Friday, 8am to 6pm<br>
+        <a href="/call-charges">Find out about call charges</a></p>
+    </div>
+
+    <p>You’ll usually get either £53.34 or £63.84 per week for each child or young person you’re responsible for. If
+      they’re disabled, you may get more.</p>
+
+    <h2 class="govuk-heading-m">How you’re paid</h2>
+    <p>All benefits, pensions and allowances are <a href="https://www.gov.uk/how-to-have-your-benefits-paid">paid into an account</a>, for example a bank account.</p>
+    <div class="pagination">
+      <a href="eligibility" class="gem-c-pagination__link" rel="prev">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+            viewBox="0 0 17 13">
+            <path fill="currentColor"
+              d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+            </path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Previous
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Eligibility</span>
+      </a>
+
+    </div>
+    <div class="pagination">
+      <a href="claim" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+            viewBox="0 0 17 13">
+            <path fill="currentColor"
+              d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
+            </path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Next
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">How to claim</span>
+      </a>
+    </div>
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+
+    {% include "includes/related_links.html" %}
   </div>
 
-  <p>You’ll usually get either £53.34 or £63.84 per week for each child or young person you’re responsible for. If they’re disabled, you may get more.</p>
-  
-  <h2 class="govuk-heading-m">How you’re paid</h2>
-  <p>All benefits, pensions and allowances are <a href="">paid into an account</a>, for example a bank account.</p>
-  <div class="pagination">
-    <a href="overview" class="gem-c-pagination__link" rel="prev">
-       <span class="gem-c-pagination__link-title">
-         <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-           <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
-         </svg>
-         <span class="gem-c-pagination__link-text">
-           Previous
-         </span>
-       </span>
-         <span class="gem-c-pagination__link-divider visually-hidden">:</span>
-         <span class="gem-c-pagination__link-label">Eligibility</span>
-     </a>
-
-   </div>
-   <div class="pagination">
-       <a href="claim" class="gem-c-pagination__link" rel="next">
-         <span class="gem-c-pagination__link-title">
-           <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
-             <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
-           </svg>
-           <span class="gem-c-pagination__link-text">
-             Next
-           </span>
-         </span>
-           <span class="gem-c-pagination__link-divider visually-hidden">:</span>
-           <span class="gem-c-pagination__link-label">How to claim</span>
-       </a>
-   </div>
-  
-   </div>
-                <div class="govuk-grid-column-one-third">
-
-                  {% include "includes/related_links.html" %}
-    </div>
-
-    </div>
-    {% include "includes/sp_topic.html" %}
+</div>
+{% include "includes/sp_topic.html" %}
 {% endblock %}

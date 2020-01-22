@@ -608,3 +608,63 @@ dd {
     line-height: 1.4285714286;
 
 }
+
+
+
+.gem-c-cookie-banner__hide-button {
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-decoration: underline;
+    color: #1d70b8;
+    padding: 0;
+    
+}
+
+.gem-c-cookie-banner#global-cookie-message {
+    background-color: #f3f2f1;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+.gem-c-cookie-banner__hide-button {
+    @media (min-width: 48.0625em) {
+    margin-top: 0;
+    position: absolute;
+    right: 170px;
+}
+}
+
+
+.gem-c-cookie-banner__hide-button {
+    @media (min-width: 40.0625em){
+    font-size: 19px;
+    line-height: 1.3157894737;
+}
+}
+
+.gem-c-cookie-banner__confirmation-message, .gem-c-cookie-banner__hide-button {
+@media (min-width: 48.0625em) { 
+    display: inline-block;
+}
+}
+
+.gem-c-button-left {
+    @media (min-width: 48.0625em) { 
+    margin-right: 20px;
+}
+}
+
+.gem-c-button  {
+    @media (min-width: 48.0625em) { width: 45%;
+}
+}
+
+
