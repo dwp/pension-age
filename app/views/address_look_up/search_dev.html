@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+ Location service
+{% endset%}
+
+{% block beforeContent %}
+  
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+      <form class="form" action="/address_look_up/address_details" method="post">
+
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-heading-xl">
+              Search for an address
+            </h1>
+          </legend>
+          
+        
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-number">
+              Property number or name
+            </label>
+            
+            <input class="govuk-input govuk-input--width-10" id="address-number" name="address-number" type="text">
+          </div>
+        
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-postcode">
+              Postcode
+            </label>
+            <input class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text">
+          </div>
+        
+        </fieldset>
+
+        <button class="govuk-button">Find address</button>
+       
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
