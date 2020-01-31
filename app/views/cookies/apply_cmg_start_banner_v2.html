@@ -1,4 +1,6 @@
-  {% extends "layout.html" %}
+
+  {% extends "layout4.html" %}
+
 
 {% block pageTitle %}
 Apply for help arranging child maintenance
@@ -72,7 +74,7 @@ Apply for help arranging child maintenance
         <div class="govuk-inset-text">We will not share your answers with the other parent.</div>
 
 
-        <a href="eligibility_questions/introduction" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+        <a href="" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
         Start now
         </a>
 
@@ -123,4 +125,25 @@ Apply for help arranging child maintenance
 
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide-accept").click(function(){
+    $("#global-cookie-message").hide();
+  });
+  $("#hide-reject").click(function(){
+    $("#global-cookie-message").hide();
+  });
+  $("#show-accept").click(function(){
+    $("#cookie-confirm").show();
+    $("#cookie-message").hide();
+  });
+  $("#show-reject").click(function(){
+    $("#cookie-reject").show();
+    $("#cookie-message").hide();
+  });
+});
+</script>
+
+
 {% endblock %}
