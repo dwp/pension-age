@@ -1,55 +1,262 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+Question page
 {% endblock %}
 
 {% set serviceName %}
- Location service
+Location service
 {% endset%}
 
 {% block beforeContent %}
-  
+
 {% endblock %}
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Find an address</h1>
 
-     
-      <form class="form" action="/address_look_up/address_details" method="post">
+    <div class="tab-content">
+      <div class="js-tabs nav-tabs">
+        <ul class="tabs-nav" role="tablist">
+          <li class="{% if years == undefined and age == undefined %}active{% endif %}"><a href="#current-sp-value"
+              id="tab-postcode">Property and postcode search</a></li>
+          <li class="{% if years or age %}active{% endif %}"><a href="#options-sp-value" id="tab-type">Type ahead
+              search</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div id="panel-postcode" class="tab-pane" style="{% if years or age %}display:none{% endif %}">
+     <div id="address-search">
+      <form class="form" method="post">
 
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h1 class="govuk-heading-xl">
-              Search for an address
-            </h1>
+
           </legend>
-          
-        
+
+
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-number">
               Property number or name
             </label>
-            
+
             <input class="govuk-input govuk-input--width-10" id="address-number" name="address-number" type="text">
           </div>
-        
+
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-postcode">
               Postcode
             </label>
             <input class="govuk-input govuk-input--width-5" id="address-postcode" name="address-postcode" type="text">
           </div>
-        
+
         </fieldset>
 
-        <button class="govuk-button">Find address</button>
+        <a class="govuk-button" id="show-address" href="#">Find address</a>
+
+      </form>
+    </div>
+   
+
+    <div class="govuk-form-group" id="address-details" style="display: none">
+      <a class="govuk-back-link" href="#" id="hide-address">Search again
+      </a>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            62 Turnberry<br>
+            Whitley Bay<br>
+            Tyne and Wear<br>
+            NE25 9NZ
+          </dd>
+          <dd class="govuk-summary-list__actions">
+           &nbsp;
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           Local authority
+          </dt>
+          <dd class="govuk-summary-list__value">
+            North Tyneside
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          &nbsp;
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Country
+          </dt>
+          <dd class="govuk-summary-list__value">
+            England
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          &nbsp;
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           UPRN
+          </dt>
+          <dd class="govuk-summary-list__value">
+           10090950697
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          &nbsp;
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Co-ordinates
+          </dt>
+          <dd class="govuk-summary-list__value">
+           55.042191, -1.480221
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          &nbsp;
+            </a>
+          </dd>
+        </div>
        
+           <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+             Building status
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Occupied
+            </dd>
+            <dd class="govuk-summary-list__actions">
+            &nbsp;
+              </a>
+            </dd>
+          </div>
+
+         
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+             Building type
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Residential, Dwelling, Self contained flat
+            </dd>
+            <dd class="govuk-summary-list__actions">
+            &nbsp;
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+</fieldset>
+  </div>
+
+</div>
+    <div id="panel-type" class="tab-pane"
+      style="{% if years == undefined and age == undefined %}display:none{% endif %}">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+        </legend>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-number">
+            Start typing the address or postcode
+          </label>
+
+          <input class="govuk-input govuk-input--width-30" id="address-number" name="address-number" type="text">
+        </div>
+
+
+      </fieldset>
+
+
+
       </form>
 
     </div>
+
   </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+  // function show(elementId) {
+  //   document.getElementById("id1").style.display = "none";
+  //   document.getElementById("id2").style.display = "block";
+  //   document.getElementById(elementId).style.display = "block";
+  // }
+
+
+  jQuery(document).ready(function ($) {
+
+    $("a#tab-postcode").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#panel-postcode").show();
+      $("#panel-type").hide();
+      window.location.hash = "#lie-postcode";
+      return false;
+    });
+
+    $("a#tab-type").click(function () {
+      $(".tabs-nav li").removeClass("active");
+
+      $(this).parent().addClass("active");
+      $("#panel-type").show();
+      $("#panel-postcode").hide();
+
+      window.location.hash = "#lie-type";
+      return false;
+    });
+
+
+    if (window.location.hash === "#lie-postcode") {
+      $("a#tab-postcode").trigger('click');
+    }
+    else if (window.location.hash === "#lie-type") {
+      $("a#tab-type").trigger('click');
+    }
+
+
+    $(document).ready(function () {
+    
+      $("#show-address").click(function () {
+        $("#address-details").show();
+        $("#address-search").hide();
+      });
+    
+    });
+    $(document).ready(function () {
+    
+    $("#hide-address").click(function () {
+      $("#address-details").hide();
+      $("#address-search").show();
+    });
+  
+  });
+
+
+
+  });
+
+
+
+
+
+</script>
 
 {% endblock %}
