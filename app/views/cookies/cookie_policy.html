@@ -8,12 +8,18 @@ How we use cookies on Apply for help arranging child maintenance
 Apply for help arranging child maintenance
 {% endset%}
 
+
 {% block beforeContent %}
-  
+{{ govukPhaseBanner({
+  tag: {
+    text: "Prototype"
+  },
+  html: 'This is a test service no data is sent or saved.'
+}) }}
 {% endblock %}
 
-{% block content %}
 
+{% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">

@@ -1,16 +1,25 @@
-  {% extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-Apply for help arranging child maintenance
+How we use cookies on Apply for help arranging child maintenance
 {% endblock %}
 
+{% set serviceName %}
 
-{% block header %}
-  <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
-{% endblock %}
+{% endset%}
+
 
 {% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "Prototype"
+  },
+  html: 'This is a test service no data is sent or saved.'
+}) }}
+{% endblock %}
+
+
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">

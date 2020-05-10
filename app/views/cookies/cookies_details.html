@@ -9,7 +9,12 @@ Apply for help arranging child maintenance
 {% endset%}
 
 {% block beforeContent %}
-
+{{ govukPhaseBanner({
+  tag: {
+    text: "Prototype"
+  },
+  html: 'This is a test service no data is sent or saved.'
+}) }}
 {% endblock %}
 
 {% block content %}
