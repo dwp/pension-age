@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+How to Claim - Pension Credit
+{% endblock %}
+
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Working, jobs and pensions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">State Pension</a>
+    </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+            Pension Credit
+        </h1>
+        <aside class="part-navigation-container" role="complementary">
+            <nav role="navigation" class="gem-c-contents-list  " data-module="track-click"
+                aria-label="Pages in this guide">
+                <h2 class="gem-c-contents-list__title">Contents</h2>
+
+                <ol class="gem-c-contents-list__list">
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                        <a class="gem-c-contents-list__link" href="overview">Overview</a>
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                        <a class="gem-c-contents-list__link" href="eligibility">Eligibility</a>
+                    </li>
+
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                        <a class="gem-c-contents-list__link" href="what_youll_get">What you'll get</a>
+                    </li>
+
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                        <a class="gem-c-contents-list__link">How to claim</a>
+                    </li>
+
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">
+                        <a class="gem-c-contents-list__link" href="report">Report a change of circumstances</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </aside>
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-l">How to claim</h2>
+
+
+
+        <h2 class="govuk-heading-m">What you need to claim</h2>
+        <p>You will need:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>your National Insurance number</li>
+            <li>information about your income, savings and investments</li>
+            <li>your bank account details</li>
+        </ul>
+        <p>The earliest you can start your application is 4 months before you reach <a
+                href="/eligibility/pension_age_start">State Pension age</a>.</p>
+        <p>The quickest way to apply for Pension Credit is online. You can only use the online service if you're already
+            being paid your State Pension. </p>
+        <a href="" class="govuk-button">Apply now</a>
+        <h2 class="govuk-heading-m">Other ways to apply</h2>
+        <p>You can use a <a href="">paper application form</a> if you’re unable to make a claim online.</p>
+        <div class="govuk-inset-text">
+            <p> Phone lines are currently busier than normal because of coronavirus (COVID-19).</p>
+            <p>A friend or family member can call for you - you must be with them when they call.</p>
+            <p><strong>Pension Credit claim line</strong><br>
+                Telephone: 0800 99 1234<br>
+                Textphone: 0800 169 0133<br>
+                <a href=" http://ngts.org.uk/"> <abbr title="Next Generation Text">NGT</abbr> text relay</a> (if you
+                cannot
+                hear or speak on the phone): 18001 then 0800 99 1234 <br>
+                Monday to Friday, 9.30am to 3:30pm<br>
+                <a href="/call-charges">Find out about call charges</a></p>
+
+
+
+        </div>
+
+        <h2 class="govuk-heading-m">If you disagree with a decision</h2>
+        <p>You can <a href="https://www.gov.uk/mandatory-reconsideration">challenge a decision</a> about your claim.
+            This is called asking for mandatory
+            reconsideration.</p>
+        <div class="pagination">
+            <a href="what_youll_get" class="gem-c-pagination__link" rel="prev">
+                <span class="gem-c-pagination__link-title">
+                    <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+                        viewBox="0 0 17 13">
+                        <path fill="currentColor"
+                            d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z">
+                        </path>
+                    </svg>
+                    <span class="gem-c-pagination__link-text">
+                        Previous
+                    </span>
+                </span>
+                <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                <span class="gem-c-pagination__link-label">What you'll get</span>
+            </a>
+
+        </div>
+        <div class="pagination">
+            <a href="eligibility" class="gem-c-pagination__link" rel="next">
+                <span class="gem-c-pagination__link-title">
+                    <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17"
+                        viewBox="0 0 17 13">
+                        <path fill="currentColor"
+                            d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z">
+                        </path>
+                    </svg>
+                    <span class="gem-c-pagination__link-text">
+                        Next
+                    </span>
+                </span>
+                <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                <span class="gem-c-pagination__link-label">Eligibility</span>
+            </a>
+        </div>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <aside class="related-content" role="complementary">
+            <br>
+            <h2 class="govuk-heading-s" id="subsection-title">
+                Related content
+            </h2>
+            <nav role="navigation" aria-labelledby="subsection-title">
+                <ul class="govuk-list govuk-!-font-size-16">
+
+
+
+
+
+
+                    <li class="gem-c-related-navigation__link"><a href="https://www.gov.uk/benefits-calculators">
+                            Benefits Calculators</a></li>
+
+                    <li class="gem-c-related-navigation__link"><a href="https://www.gov.uk/cold-weather-payment">Cold
+                            Weather Payment</a></li>
+                    <li class="gem-c-related-navigation__link"><a
+                            href="https://www.gov.uk/the-warm-home-discount-scheme"> Warm Home Discount Scheme</a></li>
+                    <li class="gem-c-related-navigation__link"><a href="https://www.gov.uk/pension-credit"> Pension
+                            Credit</a></li>
+                    <li class="gem-c-related-navigation__link"><a href="../pension_age_bus_pass.html"> Apply for an
+                            older person's bus pass</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="gem-c-contextual-footer">
+
+            <div class="gem-c-related-navigation">
+
+
+
+
+
+                <nav role="navigation" class="gem-c-related-navigation__nav-section"
+                    aria-labelledby="related-nav-topics-250e20b6" data-module="gem-toggle">
+
+                    <h2 class="govuk-heading-s gem-c-related-navigation__sub-heading--footer">Explore the topic</h2>
+
+                    <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+                        <li class="gem-c-related-navigation__link"><a
+                                class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--footer"
+                                data-track-category="relatedLinkClicked" href="../state_pension_browse">State
+                                Pension</a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,359 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+       Cookies consent mechanism
+      </h1>
+     
+      <div class="example2">
+        <div class="grid-row">
+    
+
+    <p><span class="app-c-tag app-c-tag--danger">Experimental</span>
+    </p>
+    <h2 class="govuk-heading-m">What problem does this design solve?</h2>
+     <p>Help users to understand what cookies do on DWP services and allows them to accept or reject them easily. Allow users to review and update their preferences at any time.</p>
+    
+   
+     
+     <h2 class="govuk-heading-m">How have you approached the design?</h2>
+
+<p>Based on GOV.UK guidelines and cookie policy and the NHS consent mechanism.
+
+</p>
+   
+<h2 class="govuk-heading-m">Content</h2>
+
+<p>The content in the prototype is to be used as a basis for your service but will need to change depending on the service name and cookies it uses.</p>
+
+</p>
+<h2 class="govuk-heading-m">Screen flow</h2>
+<a href="/public/images/cookies-flow.png"><img src="/public/images/cookies-flow.png" width="100%"></a></div>
+<h2 class="govuk-heading-m">Prototype</h2>
+<p><a href="https://pension-age.herokuapp.com/cookies/apply_cmg_start_banner_v2.html">Apply for help arranging child maintenance</a><br>
+</p>
+<p>username: pension-age</p>
+<p>password: ega-noisnep</p>
+<h2 class="govuk-heading-m">Prototype instructions</h2>
+<h3 class="govuk-heading-s">Banner and confirmation message</h3>
+
+<div class="app-prose-scope">
+<p>The <a href="https://pension-age.herokuapp.com/cookies/apply_cmg_start_banner_v2">page with the cookies banner</a> uses a layout <code>"layout_cookies.html"</code>
+which calls an include file <code>"includes/cookies-cmgv2.html"</code>
+<p>HTML </p>
+<pre><code>&lt;div id="global-cookie-message" class="gem-c-cookie-banner govuk-clearfix" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="" style="display: block;"&gt;
+    &lt;div class="gem-c-cookie-banner__wrapper govuk-width-container"&gt;
+      &lt;div class="govuk-grid-row"&gt;
+        &lt;div class=" govuk-grid-column-two-thirds"&gt;
+            &lt;div id="cookie-message"&gt;
+          &lt;div class="gem-c-cookie-banner__message"&gt;
+            &lt;span class="govuk-heading-m"&gt;Can we use cookies in our service?&lt;/span&gt;
+            &lt;p class="govuk-body"&gt;We'd like to use analytics cookies to collect information about how you use our services. We use this information to improve our services.&lt;/p&gt;       
+            &lt;p&gt;You can &lt;a class="govuk-link" href="cookie_policy"&gt;read more about our cookies&lt;/a&gt; before you decide.&lt;/p&gt;
+          &lt;/div&gt;
+    &lt;button id="show-accept" class="gem-c-button2 govuk-button gem-c-button--inline gem-c-button-left" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted"&gt;Yes, I'm OK with analytics cookies&lt;/button&gt;  
+    &lt;button id="show-reject" class="gem-c-button2 govuk-button gem-c-button--inline" ype="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted"&gt;No, do not use analytics cookies&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    &lt;div id="cookie-confirm" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none" style="padding-top: 20px"&gt;
+      &lt;p class="gem-c-cookie-banner__confirmation-message"&gt;
+        You’ve accepted analytics cookies. You can &lt;a class="govuk-link" href="cookie_policy" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation"&gt;change your cookie settings&lt;/a&gt; at any time.
+      &lt;/p&gt;
+      &lt;button id="hide-accept" class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner"&gt;Hide&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id="cookie-reject" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none" style="padding-top: 20px"&gt;
+      &lt;p class="gem-c-cookie-banner__confirmation-message"&gt;
+        You’ve rejected analytics cookies. You can &lt;a class="govuk-link" href="cookie_policy" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation"&gt;change your cookie settings&lt;/a&gt; at any time.
+      &lt;/p&gt;
+      &lt;button id="hide-reject" class="gem-c-cookie-banner__hide-button" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner"&gt;Hide&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  <p>CSS for banner</p>
+  <pre><code>.gem-c-cookie-banner__hide-button {
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-decoration: underline;
+    color: #1d70b8;
+    padding: 0;
+    
+}
+.gem-c-cookie-banner#global-cookie-message {
+    background-color: #f3f2f1;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.gem-c-cookie-banner__hide-button {
+    @media (min-width: 48.0625em) {
+    margin-top: 0;
+    position: absolute;
+    right: 170px;
+	}
+}
+.gem-c-cookie-banner__hide-button {
+    @media (min-width: 40.0625em){
+    font-size: 19px;
+    line-height: 1.3157894737;
+	}
+}
+.gem-c-cookie-banner__confirmation-message, .gem-c-cookie-banner__hide-button {
+@media (min-width: 48.0625em) { 
+    display: inline-block;
+	}
+}
+.gem-c-button-left {
+    @media (min-width: 48.0625em) { 
+    margin-right: 20px;
+	}
+}
+</code>
+</pre>
+  <p>Javascript to show and hide banner and confirmation message</p>
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $(document).ready(function () {
+        $("#hide-accept").click(function () {
+          $("#global-cookie-message").hide();
+        });
+        $("#hide-reject").click(function () {
+          $("#global-cookie-message").hide();
+        });
+        $("#show-accept").click(function () {
+          $("#cookie-confirm").show();
+          $("#cookie-message").hide();
+        });
+        $("#show-reject").click(function () {
+          $("#cookie-reject").show();
+          $("#cookie-message").hide();
+        });
+      });
+    &lt;/script&gt;</code></pre>
+    <h3 class="govuk-heading-s">Cookies policy page</h3>
+    <p><a href="https://pension-age.herokuapp.com/cookies/cookie_policy">Cookies policy page in protoype</a>.</p>
+    <p>HTML</p>
+    <pre>
+   <code>
+    &lt;div class="govuk-grid-row"&gt;
+      &lt;div class="govuk-grid-column-two-thirds"&gt;
+        &lt;h1 class="govuk-heading-xl"&gt;
+          How we use cookies
+        &lt;/h1&gt;
+        &lt;p&gt;A cookie is a small file which is stored on your device for a short time to make this service work.&lt;/p&gt;    
+        &lt;p&gt;We use cookies that are:&lt;/p&gt;
+        &lt;ul class="govuk-list govuk-list--bullet"&gt;
+          &lt;li&gt;essential for the service to work, like remembering your answers to certain questions&lt;/li&gt;
+          &lt;li&gt;optional and will not stop the service from working, but will give us information to help us make it better
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;We will not:&lt;/p&gt;
+        &lt;ul class="govuk-list govuk-list--bullet"&gt;
+          &lt;li&gt;use any essential cookies until you use the service&lt;/li&gt;
+          &lt;li&gt;use any optional cookies unless you tell us we can&lt;/li&gt;
+          &lt;li&gt;be able identify you through using cookies&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2 class="govuk-heading-l"&gt;Optional cookie settings&lt;/h2&gt;
+        &lt;h3 class="govuk-heading-s"&gt;Analytics cookies&lt;/h3&gt;
+        &lt;p&gt;We use Google Analytics to get information about how you use this service and help us make it better.&lt;/p&gt;
+        &lt;form class="form" action="apply_cmg_start" method="post"&gt;
+          &lt;div class="govuk-form-group"&gt;
+            &lt;fieldset class="govuk-fieldset"&gt;
+              &lt;legend class="govuk-fieldset__legend"&gt;
+                &lt;b&gt; Can we use cookies to help us improve the service?&lt;/b&gt;
+             &lt;/legend&gt;
+              &lt;div class="govuk-radios govuk-radios--inline"&gt;
+                &lt;div class="govuk-radios__item"&gt;
+                  &lt;input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio"
+                    value="england"&gt;
+                  &lt;label class="govuk-label govuk-radios__label" for="where-do-you-live-1"&gt;
+                    Yes
+                  &lt;/label&gt; &lt;/div&gt;
+                &lt;div class="govuk-radios__item"&gt;
+                  &lt;input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland"&gt;
+                  &lt;label class="govuk-label govuk-radios__label" for="where-do-you-live-2"&gt;
+                    No
+                  &lt;/label&gt; &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/fieldset&gt;
+          &lt;/div&gt;
+          &lt;button type="submit" class="govuk-button"&gt;
+            Save and continue
+          &lt;/button&gt;
+          &lt;p&gt;&lt;a href="cookies_details"&gt;Find out more about cookies on this service&lt;/a&gt;&lt;/p&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  </code></pre>
+  <br>  
+  <h3 class="govuk-heading-s">Cookies details page</h3>
+  <p><a href="https://pension-age.herokuapp.com/cookies/cookies_details">Cookies details page in protoype</a>.</p>
+  <p>HTML</p>
+    <pre>
+
+   <code>
+    &lt;div class="govuk-grid-row"&gt;
+  &lt;div class="govuk-grid-column-two-thirds"&gt;
+    &lt;h1 class="govuk-heading-xl"&gt; Details about cookies on this service&lt;/h1&gt;
+    &lt;p&gt;We need to use some essential cookies to make the 'Apply for help arranging child maintenance' website work.&lt;/p&gt;
+
+    &lt;div class="govuk-inset-text"&gt;
+      &lt;p&gt;You can &lt;a href="cookie_policy.html"&gt;change which cookies you’re happy for us to use&lt;/a&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 class="govuk-heading-m"&gt;If your cookies are switched off&lt;/h2&gt;
+    &lt;p&gt;You will see an error message when you try to use the website if your cookies are disabled.&lt;/p&gt;
+    &lt;p&gt;How to turn cookies on depends on the &lt;a href="https://www.whatsmybrowser.org/" class="govuk-link"
+        target="_new"&gt;browser you are using&lt;/a&gt; and how up to date it is.&lt;/p&gt;
+    &lt;p&gt;Find out how to change your settings for the most popular browsers, including:&lt;/p&gt;
+    &lt;ul class="govuk-list govuk-list--bullet"&gt;
+      &lt;li&gt;&lt;a href="https://support.microsoft.com/en-us/products/windows?os=windows-10" class="govuk-link"
+          target="_new"&gt;Internet Explorer&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://www.mozilla.org/en-US/?v=a" class="govuk-link" target="_new"&gt;Mozilla Firefox&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://support.google.com/accounts/answer/61416?hl=en" class="govuk-link" target="_new"&gt;Google
+          Chrome&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://www.apple.com" class="govuk-link" target="_new"&gt;Safari&lt;/a&gt;, commonly used on iPads, iPhones
+        and other Apple computers&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Find out &lt;a href="http://www.aboutcookies.org/Default.aspx?page=1" class="govuk-link" target="_new"&gt;how to manage
+        cookies&lt;/a&gt; for other browsers.&lt;/p&gt;
+    &lt;h3 class="govuk-heading-m"&gt;Cookies that measure website use&lt;/h3&gt;
+    &lt;p&gt;We use Google Analytics software to collect information about how you use the website. We use this information to
+      improve this website.&lt;/p&gt;
+    &lt;div class="govuk-inset-text"&gt;
+      &lt;p&gt;We do not allow Google to use or share the data about how you use this site.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Google analytics cookies collect and store information about:&lt;/p&gt;
+    &lt;ul class="govuk-list govuk-list--bullet"&gt;
+      &lt;li&gt;the page you visit - what you click on when using the website&lt;/li&gt;
+      &lt;li&gt;how long you spend on each page&lt;/li&gt;
+      &lt;li&gt;how you got to the website&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;table class="govuk-table"&gt;
+      &lt;caption class="govuk-table__caption"&gt;Google analytics cookies&lt;/caption&gt;
+      &lt;thead class="govuk-table__head"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Name&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Purpose&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Expires&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody class="govuk-table__body"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;td class="govuk-table__cell"&gt;_ga&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;Counts how many people visit the website by tracking if they've visited before.
+          &lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;60 minutes or when you close your browser&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;td class="govuk-table__cell"&gt;_gat&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;Counts how many pages are viewed and how often.&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;10 minutes&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;h3 class="govuk-heading-m"&gt;Cookies that help performance&lt;/h3&gt;
+    &lt;p&gt;We use some cookies to help make sure this website works consistently for everyone.&lt;/p&gt;
+    &lt;table class="govuk-table"&gt;
+      &lt;caption class="govuk-table__caption"&gt;Amazon Web Services cookies&lt;/caption&gt;
+      &lt;thead class="govuk-table__head"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Name&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Purpose&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Expires&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody class="govuk-table__body"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;td class="govuk-table__cell"&gt;AWSALB&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;Cookies help us to allocate server traffic to make the user experience as smooth
+            as possible.&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;1 day&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;h3 class="govuk-heading-m"&gt;Cookies that help keep your information secure&lt;/h3&gt;
+    &lt;p&gt;We use session cookies to keep your information secure as you move back and forward through the website.&lt;/p&gt;
+    &lt;p&gt;These cookies are automatically removed from your computer when you complete your application or if you:&lt;/p&gt;
+    &lt;ul class="govuk-list govuk-list--bullet"&gt;
+      &lt;li&gt;don't do anything for 60 minutes&lt;/li&gt;
+      &lt;li&gt;close your browser&lt;/li&gt;
+      &lt;li&gt;switch off your computer&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;table class="govuk-table"&gt;
+      &lt;caption class="govuk-table__caption"&gt;Security cookies&lt;/caption&gt;
+      &lt;thead class="govuk-table__head"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Name&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Purpose&lt;/th&gt;
+          &lt;th class="govuk-table__header" scope="col"&gt;Expires&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody class="govuk-table__body"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+        &lt;tr class="govuk-table__row"&gt;
+          &lt;td class="govuk-table__cell"&gt;sessionID&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;To remember where you are in the application and your previous answers so you
+            can move back and forward through the website.&lt;/td&gt;
+          &lt;td class="govuk-table__cell"&gt;15 minutes or when you close your browser&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;h3 class="govuk-heading-m"&gt;Cookies message&lt;/h3&gt;
+    &lt;p&gt;You may see a banner when you visit this website inviting you to accept cookies or review your settings. We’ll
+      set cookies so that your computer knows you’ve seen it and not to show it again, and also to store your settings.
+      &lt;table class="govuk-table"&gt;
+        &lt;caption class="govuk-table__caption"&gt;Service cookies&lt;/caption&gt;
+        &lt;thead class="govuk-table__head"&gt;
+          &lt;tr class="govuk-table__row"&gt;
+            &lt;th class="govuk-table__header" scope="col"&gt;Name&lt;/th&gt;
+            &lt;th class="govuk-table__header" scope="col"&gt;Purpose&lt;/th&gt;
+            &lt;th class="govuk-table__header" scope="col"&gt;Expires&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody class="govuk-table__body"&gt;
+          &lt;tr class="govuk-table__row"&gt;
+            &lt;td class="govuk-table__cell"&gt;seen_cookie_message&lt;/td&gt;
+            &lt;td class="govuk-table__cell"&gt;Saves your cookie consent settings&lt;/td&gt;
+            &lt;td class="govuk-table__cell"&gt;1 year&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+    </div>
+    </div>
+  </div>
+  </div>
+{% endblock %}

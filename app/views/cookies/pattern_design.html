@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+DWP-Cookies-consent
+{% endblock %}
+
+{% set serviceName %}
+
+{% endset%}
+
+
+{% block beforeContent %}
+
+
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="app-content">
+            <h1 class="govuk-heading-xl">
+                DWP Cookies consent mechanism
+            </h1>
+
+
+          
+
+
+                <p class="govuk-!-width-two-thirds"><span class="app-c-tag app-c-tag--danger">Experimental</span>
+                </p>
+                <h2 class="govuk-heading-m">What problem does this design solve?</h2>
+                <p class="govuk-!-width-two-thirds">Help users to understand what cookies do on DWP services and allows them to accept or reject them
+                    easily. Allow users to review and update their preferences at any time.</p>
+
+
+
+             
+
+                <p class="govuk-!-width-two-thirds">It is based on GOV.UK guidelines and cookie policy and the NHS consent mechanism.
+
+                </p>
+                <div class="example2">
+                    <a href="/public/images/cookies-flow.png"><img src="/public/images/cookies-flow.png"
+                        alt="Screen flow" width="100%"></a>
+                </div>
+
+                <h2 class="govuk-heading-m">When to use this pattern</h2>
+                <p class="govuk-!-width-two-thirds">This should be used on all public facing DWP services. </p>
+
+          
+                <h2 class="govuk-heading-m">Content</h2>
+                <p class="govuk-!-width-two-thirds">The content in the prototype is to be used as a basis for all DWP services but will need to change
+                    depending on the service name and cookies it uses.</p>
+
+
+
+
+                <h2 class="govuk-heading-m">How does it work</h2>
+                <h3 class="govuk-heading-s">Prototype</h3>
+                <p class="govuk-!-width-two-thirds"><a href="https://pension-age.herokuapp.com/cookies/apply_cmg_start_banner_v2.html">Apply for help
+                        arranging child maintenance</a><br>
+                </p>
+                <p class="govuk-!-width-two-thirds">username: pension-age<br>
+                password: ega-noisnep</p>
+
+                <h3 class="govuk-heading-s">Banner</h3>
+                <p class="govuk-!-width-two-thirds">The cookie banner is displayed the first time a service is used and persists on every page of the service until the user updates their settings.</p>
+              
+                <p class="govuk-!-width-two-thirds">It should display initially on the first page of the service after the GOV.UK start page if it's in Live or in Public Beta
+                         or your own start page if it's in Private Beta.</p>
+                     <div class="example2">
+                    <a href="/public/images/cookies_banner.png"><img src="/public/images/cookies_banner.png"
+                            width="100%" alt="Cookies banner"></a>
+                </div>
+                <br>
+                <h3 class="govuk-heading-s">Confirmation - accepted</h3>
+                <p class="govuk-!-width-two-thirds">If the user updates their settings a confirmation message is displayed until they select “Hide” or navigate away from the page.</p>
+                <div class="example2">
+
+                    <a href="/public/images/cookies_accept.png"><img src="/public/images/cookies_accept.png"
+                            width="100%" alt="Cookies accepted confirmation"></a>
+                </div>
+                <br>
+                <h3 class="govuk-heading-s">Confirmation - rejected</h3>
+                <div class="example2">
+
+                    <a href="/public/images/cookies_reject.png"><img src="/public/images/cookies_reject.png"
+                            width="100%" alt="Cookies rejected confirmation"></a>
+                </div>
+                <br>
+                <h3 class="govuk-heading-s">Cookies policy page</h3>
+                <p class="text2">Explains how we use cookies, which are optional or essential and allows users to update their settings.</p>
+                <p class="govuk-!-width-two-thirds">The Yes/No radio button options are empty by default. When the user selects an option and "Save and continue" that option will be pre-selected if they return to the page. </p>
+                <div class="example2">
+
+                        <a href="/public/images/accept_reject.png"><img src="/public/images/accept_reject.png"
+                                width="100%" alt="Cookies accept or reject question"></a>
+                    </div>
+                <p class="govuk-!-width-two-thirds"><a href="https://pension-age.herokuapp.com/cookies/cookie_policy">Cookies policy page in
+                        protoype</a>.</p>
+ 
+                <br>
+                <h3 class="govuk-heading-s">Cookies details page</h3>
+                <p class="govuk-!-width-two-thirds">More details on the cookies the service uses including their name and duration.</p>
+                <p class="govuk-!-width-two-thirds"><a href="https://pension-age.herokuapp.com/cookies/cookies_details">Cookies details page in
+                        protoype</a>.</p>
+                        <h3 class="govuk-heading-s">Cookies footer</h3>
+                        <p class="govuk-!-width-two-thirds">A link to Cookies policy page is displayed in the footer of every page of the service.</p>
+                        <div class="example2">
+                                
+                                <a href="/public/images/cookies_footer.png"><img src="/public/images/cookies_footer.png"
+                                        width="100%" alt="Cookies footer"></a>
+                            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
