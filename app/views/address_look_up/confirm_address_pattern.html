@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% set serviceName %}
+  Find your address
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="search_pattern">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+        <h1 class="govuk-heading-xl">
+            Confirm your address
+          </h1>
+
+            <form class="form" action="/address_look_up/complete" method="post">
+      
+              <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                     
+                      <p class="govuk-!-margin-top-4">1 address found for <b>62</b> and <b>NE25 9NZ</b> &nbsp;&nbsp;&nbsp;<a href="search_pattern">Change</a></p>
+                    </legend>
+                  <p>62 Turnberry<br>
+                Whitley Bay<br>
+                NE25 9NZ
+            </p>
+                   
+                  </fieldset>
+                </div>
+                <p><a href="/address_look_up/enter_address_pattern" >My address is not listed</a></p>
+                <p><a href="/address_look_up/complete" class="govuk-button">
+                  Continue
+                </a></p>
+      
+          </form>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+
